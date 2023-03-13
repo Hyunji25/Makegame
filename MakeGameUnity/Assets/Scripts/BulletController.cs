@@ -24,6 +24,7 @@ public class BulletController : MonoBehaviour
         // 충돌 횟수를 3으로 지정한다
         hp = 3;
     }
+
     void Update()
     {
         // 방향으로 속도만큼 위치를 변경
@@ -50,7 +51,11 @@ public class BulletController : MonoBehaviour
 
         // collision = 충돌한 대상
         // 충돌한 대상을 삭제한다
-        Destroy(collision.transform.gameObject);
+        if(collision.transform.tag != "wall")
+            Destroy(collision.transform.gameObject);
+        else
+            Destroy(this.gameObject);
+
 
         // 총알의 충돌 횟수가 0이 되면 총알 삭제
         if (hp == 0)
