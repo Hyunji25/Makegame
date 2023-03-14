@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     // 복제할 FX 원본
     private GameObject fxPrefab;
 
+    // 추후 list로 변경
     public GameObject[] stageBack = new GameObject[7];
 
     // 복제된 총알의 저장공간
@@ -92,21 +93,24 @@ public class PlayerController : MonoBehaviour
         // Input.GetAxis =     -1 ~ 1 사이의 값을 실수로 반환
         // Input.GetAxisRaw =     -1 or 0 or 1 반환
         float Hor = Input.GetAxisRaw("Horizontal");
+        float Ver = Input.GetAxisRaw("Vertical");
 
         // 입력 받은 값으로 플레이어를 움직인다
         Movement = new Vector3(
         Hor * Time.deltaTime * Speed,
-        0.0f,
+        Ver * Time.deltaTime * (Speed * 0.5f),
         0.0f);
+
+        transform.position += new Vector3(0.0f, Movement.y, 0.0f);
 
         // Hor이 0이라면 멈춰있는 상태이므로 예외처리를 해준다
         if (Hor != 0)
             Direction = Hor;
 
-        if(Input.GetKey(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {  
-            // 플레이어의 좌표가 0.0 보다 작을 때 플레이어만 움직인다
-            if (transform.position.x < 0)
+            // 플레이어의 좌표가 0.1 보다 작을 때 플레이어만 움직인다
+            if (transform.position.x < 0.1f)
                 transform.position += Movement;
             else
             {
@@ -115,11 +119,12 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             ControllerManager.GetInstance().DirRight = false;
             ControllerManager.GetInstance().DirLeft = true;
-            // 플레이어의 좌표가 -15.0 보다 클 때
+
+            // 플레이어의 좌표가 -15.0 보다 클 때 플레이어만 움직인다
             if (transform.position.x > -15.0f)
             // 실제 플레이어를 움직인다
                 transform.position += Movement;
@@ -129,9 +134,6 @@ public class PlayerController : MonoBehaviour
         {
             ControllerManager.GetInstance().DirRight = false;
             ControllerManager.GetInstance().DirLeft = false;
-            // ★
-            if (transform.position.x > -15.0f)
-                transform.position += Movement;
         }
 
         // 플레이어가 바라보고 있는 방향에 따라 이미지 반전 설정
@@ -197,8 +199,6 @@ public class PlayerController : MonoBehaviour
 
         // 플레이어의 움직임에 따라 이동 모션을 실행한다
         animator.SetFloat("Speed", Hor);
-
-
 
         // deltaTime : 1프레임과 2프레임 사이의 시간차
     }
@@ -301,5 +301,10 @@ public class PlayerController : MonoBehaviour
     private void SetClimbing()
     {
         onClimbing = false;
+    }
+
+    private void OnCollisionEnter2D(Collider2D collision)
+    {
+        print("Call");
     }
 }
