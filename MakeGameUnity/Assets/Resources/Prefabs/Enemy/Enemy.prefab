@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -1898528281
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 536ae3f665e090245954c9561446b3ee, type: 2}
+  m_Sprite: {fileID: 1304559308, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 0.5555556, y: 0.33333334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4714825453436370873
@@ -205,8 +205,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.35963786, y: -0.47000456}
-  m_Size: {x: 0.36, y: 0.15}
+  m_Offset: {x: 0.35963786, y: -0.43}
+  m_Size: {x: 0.41, y: 0.25}
   m_Direction: 1
 --- !u!114 &574411819975048483
 MonoBehaviour:
@@ -220,5 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54737fb068e40240ad26e42d0122d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 494169125521383605, guid: 902841ac89012f4429f7bc8f0596757f, type: 3}
+  Enemy: {fileID: 0}
   Speed: 0
   HP: 0

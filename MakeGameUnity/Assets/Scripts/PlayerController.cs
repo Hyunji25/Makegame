@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     // ** [상태체크]
     private bool onAttack; // 공격상태
     private bool onHit; // 피격상태
+    private bool onDeath; // 사망상태
 
     // ** 복제할 총알 원본
     private GameObject BulletPrefab;
@@ -50,6 +51,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("오른쪽")]
     public bool DirRight;
 
+    private Animator Anim;
+    public int HP;
 
     private void Awake()
     {
@@ -62,6 +65,8 @@ public class PlayerController : MonoBehaviour
         // ** [Resources] 폴더에서 사용할 리소스를 들고온다.
         BulletPrefab = Resources.Load("Prefabs/Bullet") as GameObject;
         fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
+
+        Anim = GetComponent<Animator>();
     }
 
     // ** 유니티 기본 제공 함수
@@ -74,6 +79,7 @@ public class PlayerController : MonoBehaviour
         // ** 초기값 셋팅
         onAttack = false;
         onHit = false;
+        onDeath = false;
         Direction = 1.0f;
 
         DirLeft = false;
@@ -81,6 +87,8 @@ public class PlayerController : MonoBehaviour
 
         for (int i = 0; i < 7; ++i)
             stageBack[i] = GameObject.Find(i.ToString());
+
+        HP = 3;
     }
 
     // ** 유니티 기본 제공 함수
@@ -188,6 +196,24 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", Hor);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "EnemyBullet")
+        {
+            --HP;
+
+            if (HP <= 0)
+            {
+                OnDeath();
+            }
+        }
+    }
+
+    private void ReleaseEnemy()
+    {
+        Destroy(gameObject, 0.016f);
+    }
+
     private void OnAttack()
     {
         // ** 이미 공격모션이 진행중이라면
@@ -232,8 +258,27 @@ public class PlayerController : MonoBehaviour
         onHit = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnDeath()
     {
+        // ** 이미 피격모션이 진행중이라면
+        if (onDeath)
+            // ** 함수를 종료시킨다.
+            return;
 
+        // ** 함수가 종료되지 않았다면...
+        // ** 피격상태를 활성화 하고.
+        onDeath = true;
+
+        // ** 피격모션을 실행 시킨다.
+        animator.SetTrigger("Death");
+    }
+
+    private void SetDeath()
+    {
+        // ** 함수가 실행되면 피격모션이 비활성화 된다.
+        // ** 함수는 애니매이션 클립의 이벤트 프레임으로 삽입됨.
+        onDeath = false;
     }
 }
+
+// !! 총알 계속 발사되도록 설정 !!
