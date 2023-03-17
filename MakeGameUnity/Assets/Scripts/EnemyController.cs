@@ -1,58 +1,69 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
-    private Text ui;
-    public GameObject Player;
+    public GameObject Target;
 
     public float Speed;
     public int HP;
     private Animator Anim;
     private Vector3 Movement;
-    private bool onSkill;
-    private GameObject BulletPrefab;
+
+    private float CoolDown;
+    private bool Attack;
+    private bool Run;
+    private bool SkillAttack;
 
     private void Awake()
     {
+        Target = GameObject.Find("Player");
+
         Anim = GetComponent<Animator>();
-        BulletPrefab = Resources.Load("Prefabs/Bullet") as GameObject;
     }
 
     void Start()
     {
-        ui = GameObject.Find("Text (Legacy)").GetComponent<Text>();
-        ui.text = null;
-
         Speed = 0.2f;
         Movement = new Vector3(1.0f, 0.0f, 0.0f);
         HP = 3;
+
+        Attack = false;
+        SkillAttack = true;
+        CoolDown = 5.0f;
     }
 
     void Update()
     {
-        BulletController Controller = Obj.AddComponent<BulletController>();
-
-        Movement = ControllerManager.GetInstance().DirRight ? 
+        Movement = ControllerManager.GetInstance().DirRight ?
             new Vector3(Speed + 1.0f, 0.0f, 0.0f) : new Vector3(Speed, 0.0f, 0.0f);
 
-        transform.position -= Movement * Time.deltaTime;
-        Anim.SetFloat("Speed", Movement.x);
+        float Distance = Vector3.Distance(Target.transform.position, transform.position);
 
-        float x = Player.transform.position.x - transform.position.x;
-        float y = Player.transform.position.y - transform.position.y;
-
-        float distance = Mathf.Sqrt((x * x) + (y * y));
-
-        print(distance);
-
-        ui.text = distance.ToString();
-
-        if (distance < 5.0f)
+        if (Distance < 0.5f)
         {
-            OnSkill();
+            Attack = true;
+            Anim.SetTrigger("Attack");
+        }
+        else if (Distance < 8.0f && !Attack)
+        {
+            if (SkillAttack)
+            {
+                Attack = true;
+                SkillAttack = false;
+                StartCoroutine(Skill());
+            }
+        }
+        else
+        {
+            Attack = false;
+        }
+
+        if (!Attack)
+        {
+            Anim.SetFloat("Speed", Movement.x);
+            transform.position -= Movement * Time.deltaTime;
         }
     }
 
@@ -70,23 +81,23 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void ReleaseEnemy()
+    IEnumerator Skill()
+    {
+        Anim.SetTrigger("Skill");
+
+        while (CoolDown > 0.0f)
+        {
+            CoolDown -= Time.deltaTime;
+            yield return null;
+        }
+
+        CoolDown = 5.0f;
+        SkillAttack = true;
+    }
+
+
+    private void DestroyEnemy()
     {
         Destroy(gameObject, 0.016f);
-    }
-
-    private void OnSkill()
-    {
-        if (onSkill)
-            return;
-
-        onSkill = true;
-
-        Anim.SetTrigger("Skill");
-    }
-
-    private void SetSkill()
-    {
-        onSkill = false;
     }
 }

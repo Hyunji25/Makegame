@@ -205,8 +205,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.35963786, y: -0.43}
-  m_Size: {x: 0.41, y: 0.25}
+  m_Offset: {x: 0.35963786, y: -0.41}
+  m_Size: {x: 0.38, y: 0.31}
   m_Direction: 1
 --- !u!114 &574411819975048483
 MonoBehaviour:
@@ -221,6 +221,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 494169125521383605, guid: 902841ac89012f4429f7bc8f0596757f, type: 3}
-  Enemy: {fileID: 0}
   Speed: 0
   HP: 0

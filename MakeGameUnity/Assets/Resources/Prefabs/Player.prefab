@@ -130,6 +130,7 @@ MonoBehaviour:
   - {fileID: 0}
   DirLeft: 0
   DirRight: 0
+  HP: 0
 --- !u!70 &8023765869603375918
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -143,7 +144,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04, y: -0.24}
+  m_Offset: {x: -0.04, y: -0.26}
   m_Size: {x: 0.36, y: 0.17}
   m_Direction: 1
 --- !u!1 &8903100171091442609

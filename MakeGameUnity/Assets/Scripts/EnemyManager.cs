@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
     private EnemyManager() { }
     private static EnemyManager instance = null;
+
+    public float Distance;
 
     public static EnemyManager GetInstance
     {
@@ -28,6 +31,8 @@ public class EnemyManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+
+            Distance = 0.0f;
 
             // 씬이 변경되어도 계속 유지될 수 있게 해준다
             DontDestroyOnLoad(gameObject);
@@ -63,6 +68,14 @@ public class EnemyManager : MonoBehaviour
 
             // 1.5초 휴식
             yield return new WaitForSeconds(1.5f);
+        }
+    }
+
+    private void Update()
+    {
+        if (ControllerManager.GetInstance().DirRight)
+        {
+            Distance += Input.GetAxisRaw("Horizontal") * Time.deltaTime;
         }
     }
 }
