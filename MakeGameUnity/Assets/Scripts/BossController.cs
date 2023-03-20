@@ -12,6 +12,7 @@ public class BossController : MonoBehaviour
 
     private Animator Anim;
 
+    // 플레이어의 SpriteRenderer 구성요소를 받아오기 위해...
     private SpriteRenderer renderer;
 
     private Vector3 Movement;
@@ -40,10 +41,13 @@ public class BossController : MonoBehaviour
     void Start()
     {
         CoolDown = 1.5f;
-        Speed = 0.5f;
+        Speed = 0.3f;
         HP = 30000;
 
-        active = false;
+        SkillAttack = false;
+        Attack = false;
+
+        active = true;
 
         SkillAttack = false;
         Attack = false;
@@ -59,66 +63,74 @@ public class BossController : MonoBehaviour
         else if (result > 0.0f)
             renderer.flipX = false;
 
-
-        if(ControllerManager.GetInstance().DirRight)
-        {
+        if (ControllerManager.GetInstance().DirRight)
             transform.position -= new Vector3(1.0f, 0.0f, 0.0f) * Time.deltaTime;
-        }
+
 
         if (active)
         {
+            active = false;
+            choice = onController();
+            //StartCoroutine(onCooldown());
+        }
+        else
+        {
+            switch (choice)
+            {
+                case STATE_WALK:
+                    onWalk();
+                    break;
 
+                case STATE_ATTACK:
+                    onAttack();
+                    break;
 
-            active = true;
-            StartCoroutine(onCooldown());
+                case STATE_SLIDE:
+                    onSlide();
+                    break;
+            }
         }
     }
 
     private int onController()
     {
-        // 행동 패턴에 대한 내용을 추가합니다
+        // 행동 패턴에 대한 내용을 추가 합니다
 
-        // 초기화
-        if (Walk)
         {
-            Movement = new Vector3(0.0f, 0.0f, 0.0f);
-            Anim.SetFloat("Speed", Movement.x);
-            Walk = false;   
-        }
+            // 초기화
+            if (Walk)
+            {
+                Movement = new Vector3(0.0f, 0.0f, 0.0f);
+                Anim.SetFloat("Speed", Movement.x);
+                Walk = false;
+            }
 
-        if (SkillAttack)
-        {
-            SkillAttack = false;
-        }
+            if (SkillAttack)
+            {
+                SkillAttack = false;
+            }
 
-        if (Attack)
-        {
-            Attack = false;
+            if (Attack)
+            {
+                Attack = false;
+            }
         }
 
         // 로직
 
-
-        // 어디로 움직일지 정하는 시점에 플레이어의 위치를 도착 지점으로 셋팅
-
+        // 어디로 움직일지 정하는 시점에 플레이어의 위치를 도착지점으로 셋팅
         EndPoint = Target.transform.position;
-            
 
-
-        // [return]
-        // 0 : 공격          Attack
-        // 1 : 이동           Walk
-        // 2 : 슬라이딩    SkillAttack
+        // * [return]
+        // * 1 : 이동           STATE_WALK
+        // * 2 : 공격          STATE_ATTACK
+        // * 3 : 슬라이딩   STATE_SLIDE
         return Random.Range(STATE_WALK, STATE_SLIDE + 1);
     }
 
+
     private IEnumerator onCooldown()
     {
-        if (active)
-        {
-            active = true;
-        }
-
         float fTime = CoolDown;
 
         while (fTime > 0.0f)
@@ -126,66 +138,54 @@ public class BossController : MonoBehaviour
             fTime -= Time.deltaTime;
             yield return null;
         }
-
-        active = true;
-        choice = onController();
-
-        switch (choice)
-        {
-            case 0:
-                onAttack();
-                break;
-
-            case 1:
-                onWalk();
-                break;
-
-            case 2:
-                onSlide();
-                break;
-        }
     }
 
     private void onAttack()
     {
         {
-            print("onAttack");
+            //print("onAttack");
         }
 
-        active = false;
+        active = true;
     }
 
     private void onWalk()
     {
-        print("onWalk");
+        //print("onWalk");
         Walk = true;
 
-        // 목적지에 도착할 때까지
+        // 목적지에 도착할 때까지......
         float Distance = Vector3.Distance(EndPoint, transform.position);
 
-        if (Distance < 0.5f)
+
+        //print(EndPoint);
+        //print(Distance);
+
+        if (Distance > 0.5f)
         {
             Vector3 Direction = (EndPoint - transform.position).normalized;
 
             Movement = new Vector3(
                 Speed * Direction.x,
-                Speed * Direction.y, 
+                Speed * Direction.y,
                 0.0f);
 
             transform.position += Movement * Time.deltaTime;
             Anim.SetFloat("Speed", Mathf.Abs(Movement.x));
         }
         else
-            active = false;
+            active = true;
     }
 
     private void onSlide()
     {
         {
-            print("onSlide");
+            //print("onSlide");
         }
+
+        active = true;
     }
 }
 
-// active 반대로 써야함
 // 여기 스크립트 전체적으로 다시 학습
+// active 반대로 하라했던 거 같은데 왜 안 걷지
