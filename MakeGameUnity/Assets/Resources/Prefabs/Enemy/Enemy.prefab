@@ -220,6 +220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54737fb068e40240ad26e42d0122d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 494169125521383605, guid: 902841ac89012f4429f7bc8f0596757f, type: 3}
+  Target: {fileID: 0}
   Speed: 0
   HP: 0

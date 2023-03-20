@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         // ** 속도를 초기화.
-        Speed = 5.0f;
+        Speed = ControllerManager.GetInstance().PlayerSpeed;
 
         // ** 초기값 셋팅
         onAttack = false;
@@ -194,6 +194,8 @@ public class PlayerController : MonoBehaviour
 
         // ** 플레이의 움직임에 따라 이동 모션을 실행 한다.
         animator.SetFloat("Speed", Hor);
+
+        print(HP);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
