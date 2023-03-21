@@ -377,6 +377,8 @@
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Skill.cs"
+"Assets/Scripts/UI/EnemyHPBar.cs"
+"Assets/Scripts/UI/PlayerHPBar.cs"
 "Assets/Scripts/UI/SidebarController.cs"
 -langversion:9.0
 
