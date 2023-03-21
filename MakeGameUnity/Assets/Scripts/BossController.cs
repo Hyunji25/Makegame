@@ -13,14 +13,14 @@ public class BossController : MonoBehaviour
     private Animator Anim;
 
     // 플레이어의 SpriteRenderer 구성요소를 받아오기 위해...
-    private SpriteRenderer renderer;
+    private SpriteRenderer Brenderer;
 
     private Vector3 Movement;
     private Vector3 EndPoint;
 
     private float CoolDown;
     private float Speed;
-    private int HP;
+    public int HP;
 
     private bool SkillAttack;
     private bool Attack;
@@ -35,7 +35,7 @@ public class BossController : MonoBehaviour
 
         Anim = GetComponent<Animator>();
 
-        renderer = GetComponent<SpriteRenderer>();
+        Brenderer = GetComponent<SpriteRenderer>();
     }
 
     void Start()
@@ -59,9 +59,9 @@ public class BossController : MonoBehaviour
         float result = Target.transform.position.x - transform.position.x;
 
         if (result < 0.0f)
-            renderer.flipX = true;
+            Brenderer.flipX = true;
         else if (result > 0.0f)
-            renderer.flipX = false;
+            Brenderer.flipX = false;
 
         if (ControllerManager.GetInstance().DirRight)
             transform.position -= new Vector3(1.0f, 0.0f, 0.0f) * Time.deltaTime;

@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class SidebarController : MonoBehaviour
+{
+    public GameObject sidebar;
+    private Animator Anim;
+
+    public bool check;
+
+    private void Awake()
+    {
+        Anim = sidebar.GetComponent<Animator>();
+    }
+
+    void Start()
+    {
+        check = false;
+    }
+
+    public void ClickButton()
+    {
+        check = !check;
+        Anim.SetBool("Move", check);
+        //print(check);
+    }
+}
+
+
+
+// 사이드바 움직이는 애니메이션 부분 다시

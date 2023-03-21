@@ -377,7 +377,7 @@
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Skill.cs"
-"Assets/Textures/Test.cs"
+"Assets/Scripts/UI/SidebarController.cs"
 -langversion:9.0
 
 /deterministic

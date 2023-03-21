@@ -15,7 +15,7 @@ C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-60518
+52823
 Successfully changed project path to: C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity
 C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2948] Host "[IP] 192.168.0.176 [Port] 0 [Flags] 2 [Guid] 1975212419 [EditorId] 1975212419 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16084] Host "[IP] 192.168.0.176 [Port] 0 [Flags] 2 [Guid] 1205268339 [EditorId] 1205268339 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2948] Host "[IP] 192.168.0.176 [Port] 0 [Flags] 2 [Guid] 1975212419 [EditorId] 1975212419 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16084] Host "[IP] 192.168.0.176 [Port] 0 [Flags] 2 [Guid] 1205268339 [EditorId] 1205268339 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 55.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 61.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.19f1 (c9714fde33b6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -67,77 +67,77 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004099 seconds.
+Registered in 0.004083 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 176 ms
-Refreshing native plugins compatible for Editor in 53.71 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 154 ms
+Refreshing native plugins compatible for Editor in 55.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.637 seconds
+- Completed reload, in  0.616 seconds
 Domain Reload Profiling:
-	ReloadAssembly (638ms)
-		BeginReloadAssembly (55ms)
+	ReloadAssembly (617ms)
+		BeginReloadAssembly (48ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (505ms)
-			LoadAssemblies (54ms)
+		EndReloadAssembly (494ms)
+			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (74ms)
+			SetupTypeCache (75ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (375ms)
+			SetupLoadedEditorAssemblies (365ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (231ms)
+				InitializePlatformSupportModulesInManaged (201ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (54ms)
+				RefreshPlugins (56ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (59ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002870 seconds.
+Registered in 0.002832 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.710 seconds
+- Completed reload, in  0.740 seconds
 Domain Reload Profiling:
-	ReloadAssembly (710ms)
-		BeginReloadAssembly (82ms)
+	ReloadAssembly (740ms)
+		BeginReloadAssembly (123ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (548ms)
-			LoadAssemblies (54ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (536ms)
+			LoadAssemblies (100ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
+			SetupTypeCache (182ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (241ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (235ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (56ms)
+				BeforeProcessingInitializeOnLoad (54ms)
 				ProcessInitializeOnLoadAttributes (150ms)
 				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (4ms)
@@ -147,13 +147,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3129 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (113.3 KB). Loaded Objects now: 3596.
-Memory consumption went from 116.4 MB to 116.3 MB.
-Total: 2.131200 ms (FindLiveObjects: 0.170500 ms CreateObjectMapping: 0.093700 ms MarkObjects: 1.773700 ms  DeleteObjects: 0.092100 ms)
+Unloading 3131 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (113.4 KB). Loaded Objects now: 3598.
+Memory consumption went from 118.7 MB to 118.6 MB.
+Total: 2.065300 ms (FindLiveObjects: 0.161900 ms CreateObjectMapping: 0.081400 ms MarkObjects: 1.746100 ms  DeleteObjects: 0.075100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,583 +168,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002698 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.769 seconds
-Domain Reload Profiling:
-	ReloadAssembly (769ms)
-		BeginReloadAssembly (156ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (533ms)
-			LoadAssemblies (105ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (199ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (219ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3599.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 2.058500 ms (FindLiveObjects: 0.174800 ms CreateObjectMapping: 0.074500 ms MarkObjects: 1.727700 ms  DeleteObjects: 0.080600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003881 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.697 seconds
-Domain Reload Profiling:
-	ReloadAssembly (698ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (522ms)
-			LoadAssemblies (62ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (222ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (138ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3602.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 1.861600 ms (FindLiveObjects: 0.153800 ms CreateObjectMapping: 0.066900 ms MarkObjects: 1.584200 ms  DeleteObjects: 0.056100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002637 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.669 seconds
-Domain Reload Profiling:
-	ReloadAssembly (669ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (514ms)
-			LoadAssemblies (53ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (174ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (226ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (142ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3605.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 2.324400 ms (FindLiveObjects: 0.163900 ms CreateObjectMapping: 0.079400 ms MarkObjects: 2.010200 ms  DeleteObjects: 0.069900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003544 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.714 seconds
-Domain Reload Profiling:
-	ReloadAssembly (714ms)
-		BeginReloadAssembly (98ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (540ms)
-			LoadAssemblies (56ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (212ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (130ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (80.0 KB). Loaded Objects now: 3608.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 1.876700 ms (FindLiveObjects: 0.152000 ms CreateObjectMapping: 0.067800 ms MarkObjects: 1.599900 ms  DeleteObjects: 0.056400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003138 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.701 seconds
-Domain Reload Profiling:
-	ReloadAssembly (702ms)
-		BeginReloadAssembly (92ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (544ms)
-			LoadAssemblies (55ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (172ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (244ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (150ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.7 KB). Loaded Objects now: 3611.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 2.601400 ms (FindLiveObjects: 0.171100 ms CreateObjectMapping: 0.071600 ms MarkObjects: 2.273200 ms  DeleteObjects: 0.084600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002971 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.720 seconds
-Domain Reload Profiling:
-	ReloadAssembly (720ms)
-		BeginReloadAssembly (94ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (561ms)
-			LoadAssemblies (55ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (191ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (250ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.7 KB). Loaded Objects now: 3614.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 1.989200 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.071000 ms MarkObjects: 1.688100 ms  DeleteObjects: 0.068300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002947 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.686 seconds
-Domain Reload Profiling:
-	ReloadAssembly (686ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (526ms)
-			LoadAssemblies (53ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (179ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (232ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (145ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3617.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 1.956900 ms (FindLiveObjects: 0.156500 ms CreateObjectMapping: 0.069400 ms MarkObjects: 1.664500 ms  DeleteObjects: 0.065500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002606 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.721 seconds
-Domain Reload Profiling:
-	ReloadAssembly (721ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (563ms)
-			LoadAssemblies (56ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (186ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (250ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3620.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 2.187900 ms (FindLiveObjects: 0.170200 ms CreateObjectMapping: 0.077200 ms MarkObjects: 1.865500 ms  DeleteObjects: 0.073600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002581 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
-Domain Reload Profiling:
-	ReloadAssembly (734ms)
-		BeginReloadAssembly (100ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (554ms)
-			LoadAssemblies (54ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (186ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (230ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (143ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3623.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 1.918000 ms (FindLiveObjects: 0.151300 ms CreateObjectMapping: 0.062600 ms MarkObjects: 1.641500 ms  DeleteObjects: 0.061900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002681 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.690 seconds
-Domain Reload Profiling:
-	ReloadAssembly (690ms)
-		BeginReloadAssembly (91ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (532ms)
-			LoadAssemblies (51ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (169ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (244ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (151ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.9 KB). Loaded Objects now: 3626.
-Memory consumption went from 115.5 MB to 115.5 MB.
-Total: 2.149000 ms (FindLiveObjects: 0.174000 ms CreateObjectMapping: 0.071800 ms MarkObjects: 1.813800 ms  DeleteObjects: 0.088500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 960.530280 seconds.
-  path: Assets/Resources/Prefabs/Player.prefab
-  artifactKey: Guid(902841ac89012f4429f7bc8f0596757f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Player.prefab using Guid(902841ac89012f4429f7bc8f0596757f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd40678972c34bea84b343308a698c16') in 0.123215 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002697 seconds.
+Registered in 0.002646 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -753,40 +177,40 @@ Native extension for Android target not found
 Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.719 seconds
+- Completed reload, in  0.668 seconds
 Domain Reload Profiling:
-	ReloadAssembly (720ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (669ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (554ms)
-			LoadAssemblies (60ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (503ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
+			SetupTypeCache (177ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (237ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (218ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (149ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3637.
-Memory consumption went from 120.0 MB to 119.9 MB.
-Total: 2.056800 ms (FindLiveObjects: 0.161700 ms CreateObjectMapping: 0.067300 ms MarkObjects: 1.753800 ms  DeleteObjects: 0.072900 ms)
+Unloading 3119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3601.
+Memory consumption went from 117.8 MB to 117.7 MB.
+Total: 2.131200 ms (FindLiveObjects: 0.153900 ms CreateObjectMapping: 0.068800 ms MarkObjects: 1.839000 ms  DeleteObjects: 0.068500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -801,7 +225,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003587 seconds.
+Registered in 0.002785 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -810,40 +234,40 @@ Native extension for Android target not found
 Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.716 seconds
+- Completed reload, in  0.826 seconds
 Domain Reload Profiling:
-	ReloadAssembly (716ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (826ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (555ms)
-			LoadAssemblies (56ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (654ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
+			SetupTypeCache (209ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (238ms)
+			RebuildScriptCaches (105ms)
+			SetupLoadedEditorAssemblies (228ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
+				InitializePlatformSupportModulesInManaged (20ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadAttributes (141ms)
 				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3117 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.9 KB). Loaded Objects now: 3640.
-Memory consumption went from 120.0 MB to 119.9 MB.
-Total: 1.906300 ms (FindLiveObjects: 0.157300 ms CreateObjectMapping: 0.068500 ms MarkObjects: 1.617500 ms  DeleteObjects: 0.062100 ms)
+Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (79.9 KB). Loaded Objects now: 3605.
+Memory consumption went from 117.5 MB to 117.4 MB.
+Total: 2.114100 ms (FindLiveObjects: 0.165900 ms CreateObjectMapping: 0.076500 ms MarkObjects: 1.792400 ms  DeleteObjects: 0.078300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -857,509 +281,140 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1328.230294 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Assassin/Brawler/Brawler18.png
-  artifactKey: Guid(d473e35d9c998d443a00d04000f893e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Assassin/Brawler/Brawler18.png using Guid(d473e35d9c998d443a00d04000f893e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2156f173a6e1776b9dd379ade6fc81b') in 0.080063 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.437341 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Assassin/DemonHunter/DemonHunter20.png
-  artifactKey: Guid(63b30c77b2de31d4398b65d935f4713c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Assassin/DemonHunter/DemonHunter20.png using Guid(63b30c77b2de31d4398b65d935f4713c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db67dde4dce642e3f63090b6f257cd57') in 0.041861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.058946 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Assassin/Ranger/Ranger7.png
-  artifactKey: Guid(530bcabb1501d8148a19a77465ecac03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Assassin/Ranger/Ranger7.png using Guid(530bcabb1501d8148a19a77465ecac03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cd32f1579cd397fab8becdcf3695fb') in 0.033083 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.396049 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Elementalist/Arcanist/Arcanist15.png
-  artifactKey: Guid(cdec13907ffc75749ab2ed436bec6b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Elementalist/Arcanist/Arcanist15.png using Guid(cdec13907ffc75749ab2ed436bec6b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b44f9d6ce8e4284e0d027b7c3d4bae') in 0.017427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.140433 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Elementalist/Cryomancer/Cryomancer17.png
-  artifactKey: Guid(f5ab3f534c1138f4786f23cd74103223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Elementalist/Cryomancer/Cryomancer17.png using Guid(f5ab3f534c1138f4786f23cd74103223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7bcf35e0b290c44209b21dd13bbbbf') in 0.016814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.189407 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Elementalist/Electromancer/Electromancer16.png
-  artifactKey: Guid(1458237dbb3c6d54f8fe9d39c0175d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Elementalist/Electromancer/Electromancer16.png using Guid(1458237dbb3c6d54f8fe9d39c0175d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb311336809cd05a2df766938107b8d') in 0.032424 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.498823 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Elementalist/Geomancer/Geomancer5.png
-  artifactKey: Guid(14a0f66a7be165c4ba476e3d7c40e390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Elementalist/Geomancer/Geomancer5.png using Guid(14a0f66a7be165c4ba476e3d7c40e390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c454e5c10fd5f5970716bbaf17122380') in 0.021484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.174179 seconds.
-  path: Assets/Blink/Art/Icons/Classes/Elementalist/Pyromancer/Pyromancer7.png
-  artifactKey: Guid(8ec5b52b09d90074a83d61c1334190f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/Elementalist/Pyromancer/Pyromancer7.png using Guid(8ec5b52b09d90074a83d61c1334190f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88417a30c1121b7c34d8f549cc31497') in 0.016553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.960194 seconds.
-  path: Assets/Blink/Art/Icons/Classes/HolyDarkness/Cultist/Cultist12.png
-  artifactKey: Guid(e691198d56e3a1848b5009e1ff94dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blink/Art/Icons/Classes/HolyDarkness/Cultist/Cultist12.png using Guid(e691198d56e3a1848b5009e1ff94dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0754e310ecfdb3602c67777dd50ddf16') in 0.016407 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 288.950517 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/2-Acrobatic-Move.png
-  artifactKey: Guid(9048f1bbff3cf47ce8b0467ca61e0f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/2-Acrobatic-Move.png using Guid(9048f1bbff3cf47ce8b0467ca61e0f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff73ff26510bc63838f2cf200cca54d5') in 0.018756 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/18-Curse-Darkness.png
-  artifactKey: Guid(e232be18a379a459980a86a9ae0b97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/18-Curse-Darkness.png using Guid(e232be18a379a459980a86a9ae0b97bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83094ed77d9bc4a7b49489a1c6132ca3') in 0.015083 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/28-Electric-Wave.png
-  artifactKey: Guid(07aa89d2416874192aa53a2e6356a068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/28-Electric-Wave.png using Guid(07aa89d2416874192aa53a2e6356a068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27d01f468e062219e2df391a0d76d13') in 0.017063 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/33-Flash.png
-  artifactKey: Guid(50f3591c2877549fcb580587faa60f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/33-Flash.png using Guid(50f3591c2877549fcb580587faa60f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bdf32584cafccd0e45f1e8f31c91252') in 0.014618 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/14-Corrupt-Mind.png
-  artifactKey: Guid(8ba259bb0a28241f686bb8959ab8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/14-Corrupt-Mind.png using Guid(8ba259bb0a28241f686bb8959ab8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa913bdca392834b0ecd530322173993') in 0.016075 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/22-Delaminate.png
-  artifactKey: Guid(04781ddf1640d48e4b784ad7268ba9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/22-Delaminate.png using Guid(04781ddf1640d48e4b784ad7268ba9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33d086ee884adfe3ac7e4555402fa40') in 0.014530 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/27-Hawkeye.png
-  artifactKey: Guid(a348aa04f846046b8b5ce0cc85878da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/27-Hawkeye.png using Guid(a348aa04f846046b8b5ce0cc85878da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68e9f77b49d7594cb7c6678bf031293') in 0.014372 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/5-Apply-Burn.png
-  artifactKey: Guid(c6c887cce7af543b0bf0b150917f449c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/5-Apply-Burn.png using Guid(c6c887cce7af543b0bf0b150917f449c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87106e5f8414a13d58a59a47ca97671b') in 0.015576 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/3-Aggression.png
-  artifactKey: Guid(d9c542b9190b24dafb2737a0b0cf789e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/3-Aggression.png using Guid(d9c542b9190b24dafb2737a0b0cf789e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196dada58b1cf7bd71ed836cb87767c7') in 0.015568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/34-Force-Push.png
-  artifactKey: Guid(5e256e48be18d4d2ebc4bc0c1995af39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/34-Force-Push.png using Guid(5e256e48be18d4d2ebc4bc0c1995af39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '037988cc48b6c9bec0e0236f6be002d2') in 0.013836 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/8-Bash.png
-  artifactKey: Guid(cf62c64581a1f48dcb9737334276c7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/8-Bash.png using Guid(cf62c64581a1f48dcb9737334276c7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09630c161df58ca0f9b1a51f814ce83') in 0.015783 seconds 
+  Time since last request: 2353.127988 seconds.
+  path: Assets/Textures/Skill/8-Bash.png
+  artifactKey: Guid(a3ccc6be5ba50244e9791f0a77ec735c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/8-Bash.png using Guid(a3ccc6be5ba50244e9791f0a77ec735c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2664a47af823ec0617591fd843517f4d') in 0.086613 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000018 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/32-Fissure.png
-  artifactKey: Guid(12c482f80b554437a9b0e3c179b2618f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/32-Fissure.png using Guid(12c482f80b554437a9b0e3c179b2618f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8a4f2ff8693ac11e894f1588e4d0c6') in 0.015358 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/9-Battle-Roar.png
-  artifactKey: Guid(6d97d3b88bacf4e8bb4116ea752e1f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/9-Battle-Roar.png using Guid(6d97d3b88bacf4e8bb4116ea752e1f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2daa0832f93fc84962a75e02fc220c') in 0.014797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/20-Decay.png
-  artifactKey: Guid(8a94ca56fa5d0485ab678593da84d890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/20-Decay.png using Guid(8a94ca56fa5d0485ab678593da84d890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061220c2817749848702deacb6ff9112') in 0.015324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/24-Detect-Weekess.png
-  artifactKey: Guid(482884d1759cf4bdbad2fa53c99aee5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/24-Detect-Weekess.png using Guid(482884d1759cf4bdbad2fa53c99aee5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58d2af14113cf835fc3cd0000209f4d3') in 0.015711 seconds 
+  path: Assets/Textures/Skill/10-Charge.png
+  artifactKey: Guid(4d53d137289acd7478a5f4fb65eefb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/10-Charge.png using Guid(4d53d137289acd7478a5f4fb65eefb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b53ae0ae8667edf270821e9578c1cbb') in 0.087550 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/35-Gravitation.png
-  artifactKey: Guid(0d26ee18a4ed746f59cfd0d1b9b3d11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/35-Gravitation.png using Guid(0d26ee18a4ed746f59cfd0d1b9b3d11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c59a2f4b8fc6a8bacd154b14576d0ec') in 0.014668 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/6-Apply-Paralysis.png
-  artifactKey: Guid(006f09b00039b439893f8261106e56df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/6-Apply-Paralysis.png using Guid(006f09b00039b439893f8261106e56df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c13430ece0a5f252af086c602a7384b') in 0.019160 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/11-Charity.png
+  path: Assets/99. Resource/150 Fantasy Skill Icons/Sprites/11-Charity.png
   artifactKey: Guid(022f16cfd7d5647188b31ae1abc00634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/11-Charity.png using Guid(022f16cfd7d5647188b31ae1abc00634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd77fe67a4995b9f1f4a070aee808383') in 0.015749 seconds 
+Start importing Assets/99. Resource/150 Fantasy Skill Icons/Sprites/11-Charity.png using Guid(022f16cfd7d5647188b31ae1abc00634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caead6a5faef265714bc2a271bd23579') in 0.080518 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.412783 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/39-Hesitation.png
-  artifactKey: Guid(636d0e7efb0b743ac8d69aecea8bc7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/39-Hesitation.png using Guid(636d0e7efb0b743ac8d69aecea8bc7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487999bf1bf5b4847d7fa71f3402d1a4') in 0.017154 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/42-Ice.png
-  artifactKey: Guid(4b6befbf133704370bb29da715e368c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/42-Ice.png using Guid(4b6befbf133704370bb29da715e368c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f05e69fa98c189f98310f8368ce452d') in 0.015645 seconds 
+  Time since last request: 0.690821 seconds.
+  path: Assets/Textures/Skill/37-Head-Shot.png
+  artifactKey: Guid(206258af847a4f1428565320c111389b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/37-Head-Shot.png using Guid(206258af847a4f1428565320c111389b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50579dcade92496a0951384a45fb59c1') in 0.013245 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/44--Impack-Vibration.png
-  artifactKey: Guid(4b4c678e6ad9e4873b02ca8ca35d778f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/44--Impack-Vibration.png using Guid(4b4c678e6ad9e4873b02ca8ca35d778f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457118b860ccd33dc8a5263caba53625') in 0.014655 seconds 
+  path: Assets/Textures/Skill/95-Wheater-Report.png
+  artifactKey: Guid(060fba48514926642a2580440b12211f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/95-Wheater-Report.png using Guid(060fba48514926642a2580440b12211f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dec1f6dcd549f7fa5daf61124f52a7e') in 0.017764 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/47-Lightning.png
-  artifactKey: Guid(68c34f794ff824595866971c55a8fe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/47-Lightning.png using Guid(68c34f794ff824595866971c55a8fe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e175910ebc0ff7b4698aac0b60ae2186') in 0.014195 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/49-Lullaby.png
-  artifactKey: Guid(973b80daceb574e4a899fdde92cc3e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/49-Lullaby.png using Guid(973b80daceb574e4a899fdde92cc3e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ce7671a9e10e8d279fc0a67a9d435f') in 0.014151 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/51-Meteor-Storm.png
-  artifactKey: Guid(39b1bec1379a64baba2bdbb54a917c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/51-Meteor-Storm.png using Guid(39b1bec1379a64baba2bdbb54a917c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ff97cd43d99c6b431770039c76faef') in 0.015900 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/54-Over-Growth.png
-  artifactKey: Guid(ebff662845e054b529080169db2a2f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/54-Over-Growth.png using Guid(ebff662845e054b529080169db2a2f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25281afb142616de33eb1868487b5bc7') in 0.016513 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/50-Magic-Resist.png
-  artifactKey: Guid(9345211fd172c4e75985765a853af697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/50-Magic-Resist.png using Guid(9345211fd172c4e75985765a853af697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf43122e1f7de478c72b9061e3c493f7') in 0.014086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/58-Fire-Arrow.png
-  artifactKey: Guid(7b9c727dbbf954b6c9939d0af35bf2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/58-Fire-Arrow.png using Guid(7b9c727dbbf954b6c9939d0af35bf2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bd878a08370ce5d9b7e7abdac2a00d') in 0.014075 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/59-Sparking-Arrow.png
-  artifactKey: Guid(73e20d521b16b46e2b9bbf45cb7bb985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/59-Sparking-Arrow.png using Guid(73e20d521b16b46e2b9bbf45cb7bb985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009e7f47c599e2e034cfb175feb58a2a') in 0.015950 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/57-Poison-Arrow.png
-  artifactKey: Guid(961c83116b5884f3ca38ce56ab894a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/57-Poison-Arrow.png using Guid(961c83116b5884f3ca38ce56ab894a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1b2c3307358a1396b924c7743258ab') in 0.014277 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/48-Maditation.png
-  artifactKey: Guid(6a5b222759e6243e0a2f91d306c6072a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/48-Maditation.png using Guid(6a5b222759e6243e0a2f91d306c6072a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e167058460a35ae444886258f7384f9') in 0.016356 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.198539 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/63-Power-Strike.png
-  artifactKey: Guid(77fb1396afd204cba852e21347033826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/63-Power-Strike.png using Guid(77fb1396afd204cba852e21347033826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8717037190e4ca3f7fcc3b22a4dcb54') in 0.015048 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/71-Reraise.png
-  artifactKey: Guid(11f9f7135112e48f4a6bab32d0ce98aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/71-Reraise.png using Guid(11f9f7135112e48f4a6bab32d0ce98aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d3375be3440929e40ad80109e73212') in 0.015560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/68-Radius-Heal.png
+  Time since last request: 0.000019 seconds.
+  path: Assets/99. Resource/150 Fantasy Skill Icons/Sprites/68-Radius-Heal.png
   artifactKey: Guid(256de729486824db797be63853a04773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/68-Radius-Heal.png using Guid(256de729486824db797be63853a04773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62eca62237b9fafb890955bb5e49084b') in 0.016657 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/80-Throw-Stone.png
-  artifactKey: Guid(412c54c27f8174dc99d02b3622fce8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/80-Throw-Stone.png using Guid(412c54c27f8174dc99d02b3622fce8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '765b99745218ea0d9abbaade6fc2b032') in 0.015378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/94-Snowman.png
-  artifactKey: Guid(32250abfcff114351bc3e4b4c26e5ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/94-Snowman.png using Guid(32250abfcff114351bc3e4b4c26e5ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eea126154a14fff5ab3d6b7f75e1959') in 0.014872 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/97-Enchant-Flame.png
-  artifactKey: Guid(a2067bf439b744448b214c4ac83360fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/97-Enchant-Flame.png using Guid(a2067bf439b744448b214c4ac83360fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bfa23c1b2bd265244bcc5da3e9d181b') in 0.014868 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/92-Frost-Bite.png
-  artifactKey: Guid(cc0c8d4bd140e46879653895a4a1d4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/92-Frost-Bite.png using Guid(cc0c8d4bd140e46879653895a4a1d4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d947e8a8a347e7d2e6ed0fd1d680cb') in 0.017532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/64-Prominance.png
-  artifactKey: Guid(1d520af83799d4cbf9374bbe22ca1dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/64-Prominance.png using Guid(1d520af83799d4cbf9374bbe22ca1dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b22629ad21b8115b48cecdfaf160b5') in 0.016534 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/85-Trepidation.png
-  artifactKey: Guid(deb255acb3759467cbec577957a9403e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/85-Trepidation.png using Guid(deb255acb3759467cbec577957a9403e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ce7ba2ebbfc42020ebd1a3ce9a8e06') in 0.014454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/67-Quiescence.png
-  artifactKey: Guid(487560fc8eccb458dbd04d3af6dd1e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/67-Quiescence.png using Guid(487560fc8eccb458dbd04d3af6dd1e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19963e92705c504fb4c1c6293061878d') in 0.020101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/89-Snow-Bullet.png
-  artifactKey: Guid(272d90eccf9a0491fa281608391c6274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/89-Snow-Bullet.png using Guid(272d90eccf9a0491fa281608391c6274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c68d45ffc91d4ae4cc9bbee4ddfd3a') in 0.018954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/82-Tinospora.png
-  artifactKey: Guid(567ea0827e5f64821b1c4cfe2928de65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/82-Tinospora.png using Guid(567ea0827e5f64821b1c4cfe2928de65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635c884a8bbd58cfc925bd92fbd12780') in 0.018875 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/78-Taunt.png
-  artifactKey: Guid(e75d9d4c30c8b41c09846ad70007862e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/78-Taunt.png using Guid(e75d9d4c30c8b41c09846ad70007862e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d83e01c108bef83f1ef38264d0b16f5') in 0.013700 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/90-Frost-Spike.png
-  artifactKey: Guid(11b25eb8dff954bf69ba19e8db6ab84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/90-Frost-Spike.png using Guid(11b25eb8dff954bf69ba19e8db6ab84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366dca926ab1e0dab3c972be4aec6da9') in 0.017315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/84-Termor.png
-  artifactKey: Guid(537ecccd3eaf24df5b9acf5843f0e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/84-Termor.png using Guid(537ecccd3eaf24df5b9acf5843f0e507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b74bb6843a4ec3e5164e5ea00843021') in 0.017436 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/87-Waver.png
-  artifactKey: Guid(fd27e3f6b435d4425a4e5034f96cdef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/87-Waver.png using Guid(fd27e3f6b435d4425a4e5034f96cdef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f41071374379c84d5e7f065dcfef397') in 0.012814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/69-Repel.png
-  artifactKey: Guid(64910aa9bb3a74497a5a5dbbe2f5a468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/69-Repel.png using Guid(64910aa9bb3a74497a5a5dbbe2f5a468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2314a7d3bcbb4f8a9e6c2f311d3871c9') in 0.014296 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/76-Shove-Stab.png
-  artifactKey: Guid(cf8fbf2de1b1b4d2dabcb7682d8ba460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/76-Shove-Stab.png using Guid(cf8fbf2de1b1b4d2dabcb7682d8ba460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c39f177bfbac93d2aea0dbe79ff85e7') in 0.013706 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.043018 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/99-Enchant-Earth.png
-  artifactKey: Guid(4e1f4a4f5e1564beaa2174c851421180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/99-Enchant-Earth.png using Guid(4e1f4a4f5e1564beaa2174c851421180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac8159b2b638b0ee5ebe5d94ba8e558') in 0.014670 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/101-Posses.png
-  artifactKey: Guid(5f64e1f39058141bca9230e4bdd31aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/101-Posses.png using Guid(5f64e1f39058141bca9230e4bdd31aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543b697201d9eab9d8c7a0c87b4487ac') in 0.014271 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/104-Bone-Trap.png
-  artifactKey: Guid(ef65aab13e15a4980bc0a51d43ee69e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/104-Bone-Trap.png using Guid(ef65aab13e15a4980bc0a51d43ee69e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18197e40e84a76247c14dd10bf53240') in 0.014557 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/106-Bear-Trap.png
-  artifactKey: Guid(ef1c6f2d47db5475aa5f904dcfb8f9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/106-Bear-Trap.png using Guid(ef1c6f2d47db5475aa5f904dcfb8f9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da8b4f3766c95fc77bd8599d40d537a') in 0.013637 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/102-Rise.png
-  artifactKey: Guid(012deee41ffa241ceb581fb6acc2b3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/102-Rise.png using Guid(012deee41ffa241ceb581fb6acc2b3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06639dd5e3aa0cae52e265f305dd4581') in 0.016701 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/110-Yellow-Potion.png
-  artifactKey: Guid(338766860e7104c7da0c9077a4cfad71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/110-Yellow-Potion.png using Guid(338766860e7104c7da0c9077a4cfad71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efebec3cacc6b05990329150c48cd242') in 0.016383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/116-Fire-Pillar.png
-  artifactKey: Guid(0c3d8ebc26e1b4293a424fbae11829f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/116-Fire-Pillar.png using Guid(0c3d8ebc26e1b4293a424fbae11829f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1414b0aba676930d65e36445cb2d2577') in 0.017062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/113-Rage.png
-  artifactKey: Guid(3519c3c0b82d14d4d9769f1dc86904db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/113-Rage.png using Guid(3519c3c0b82d14d4d9769f1dc86904db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84cbddd1f49c462bb997ecea2fb65fe4') in 0.015024 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/124-Pick.png
-  artifactKey: Guid(0e77e93919f1e455dbefa760bc0660de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/124-Pick.png using Guid(0e77e93919f1e455dbefa760bc0660de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbbacb4d7a7e0a6469dc0156bc76480e') in 0.014074 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/126-Steal.png
-  artifactKey: Guid(2728f77a1347547bca66ec2ed7475fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/126-Steal.png using Guid(2728f77a1347547bca66ec2ed7475fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c45c5a0acf92523b16847209c4a377') in 0.015302 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/123-Identify.png
-  artifactKey: Guid(97539fb00100044fcb64a71eace97452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/123-Identify.png using Guid(97539fb00100044fcb64a71eace97452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8407c3a8be3ab728cc527e1f3ec481e0') in 0.019262 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/133-Gamble.png
-  artifactKey: Guid(281a946ab0b1b496896813c70c9c31f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/133-Gamble.png using Guid(281a946ab0b1b496896813c70c9c31f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab44c12e644c323ad4159fb3fffa895f') in 0.017240 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/125-Tackle.png
-  artifactKey: Guid(657e61396de954dd58c72903864114bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/125-Tackle.png using Guid(657e61396de954dd58c72903864114bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523da005192cc7fabc59ea2ebf8056c8') in 0.014704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/108-Green-Potion.png
-  artifactKey: Guid(5b224af7c8f4f4a618b4d2fa39a0dbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/108-Green-Potion.png using Guid(5b224af7c8f4f4a618b4d2fa39a0dbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eec7b4a5d34341bddfdab1011787d43') in 0.013735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/111-Blue-Potion.png
-  artifactKey: Guid(2a280aa90446b40508fa33c8d702f8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/111-Blue-Potion.png using Guid(2a280aa90446b40508fa33c8d702f8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2dccb195cdde604c2c7f5377512552') in 0.016178 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/118-Kick.png
-  artifactKey: Guid(bcc4e92fe2b1d4c87a04d811eec79e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/118-Kick.png using Guid(bcc4e92fe2b1d4c87a04d811eec79e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e39681f999da984730569145b63143') in 0.017327 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/120-Float.png
-  artifactKey: Guid(aded89c3cc39746f0b06cc98bf2ae990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/120-Float.png using Guid(aded89c3cc39746f0b06cc98bf2ae990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2067f075888b7df1c24cac7f6354b747') in 0.016507 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/131-Galloop.png
-  artifactKey: Guid(a7cba29fa408e4301aa9bef4f62831af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/131-Galloop.png using Guid(a7cba29fa408e4301aa9bef4f62831af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9c13a7fa40f45f4b62743dbb1abfd1') in 0.018153 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.032460 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/135-Bulletproof.png
-  artifactKey: Guid(766686793cc92444db6e8e6f7c37a238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/135-Bulletproof.png using Guid(766686793cc92444db6e8e6f7c37a238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a00772d4f8e01d9fab5a2f5c8b532fbc') in 0.013236 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/143-Necromancy.png
-  artifactKey: Guid(ae810be1fcb5d4c1c9cc702c5cd72a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/143-Necromancy.png using Guid(ae810be1fcb5d4c1c9cc702c5cd72a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c53bc4082e212d54047108aff463ab60') in 0.014771 seconds 
+Start importing Assets/99. Resource/150 Fantasy Skill Icons/Sprites/68-Radius-Heal.png using Guid(256de729486824db797be63853a04773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fa3f49487830a03b1eed8ecbafa87e') in 0.014543 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/138-Song2.png
-  artifactKey: Guid(b6df32240e3ff4b0d9845e311bd6cbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/138-Song2.png using Guid(b6df32240e3ff4b0d9845e311bd6cbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706f60f328a01a96b7185b739cdda0cf') in 0.015147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/150-Phycomancy.png
-  artifactKey: Guid(fa3ab781962ed482b80a780752f5f33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/150-Phycomancy.png using Guid(fa3ab781962ed482b80a780752f5f33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4d9054b0740761495e4df6c8b73b42') in 0.015181 seconds 
+  path: Assets/99. Resource/150 Fantasy Skill Icons/Sprites/95-Wheater-Report.png
+  artifactKey: Guid(2903baaa769f94e9db470024deac46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/99. Resource/150 Fantasy Skill Icons/Sprites/95-Wheater-Report.png using Guid(2903baaa769f94e9db470024deac46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d352b202cd057e5723f20c2faee4a12') in 0.019509 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/148-Dendromancy.png
-  artifactKey: Guid(78d8f82e6222543f4a500122ef99f33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/148-Dendromancy.png using Guid(78d8f82e6222543f4a500122ef99f33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11438e76273a5ab29f93d0bfca41f890') in 0.015707 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/144-Cryomancy.png
-  artifactKey: Guid(6bde49f0227804bf7a1fcd1fefdad170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/144-Cryomancy.png using Guid(6bde49f0227804bf7a1fcd1fefdad170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ea19923097550514f92fc1b2a99c69') in 0.015416 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/146-Aeromancy.png
-  artifactKey: Guid(40c351e12b03e45d5b9a6f523dd372f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/146-Aeromancy.png using Guid(40c351e12b03e45d5b9a6f523dd372f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1706a40134eb186381589969f02b25bb') in 0.015031 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/142-Geomancy.png
-  artifactKey: Guid(ad7a20c7735894b7a8db5e31894d1144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/142-Geomancy.png using Guid(ad7a20c7735894b7a8db5e31894d1144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c85307c71664eb04a3992cf2581c58f') in 0.013875 seconds 
+  path: Assets/Textures/Skill/38-Healing-Light.png
+  artifactKey: Guid(b103bad63287ea64ebd715d7bb640bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/38-Healing-Light.png using Guid(b103bad63287ea64ebd715d7bb640bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4581268021244464c238262317e1d432') in 0.015302 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/150 Fantasy Skill Icons/Sprites/137-Song1.png
-  artifactKey: Guid(b64b95058510047fab49fe1c457f8c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/150 Fantasy Skill Icons/Sprites/137-Song1.png using Guid(b64b95058510047fab49fe1c457f8c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6969ff1f725f15abbcf58726f9569f4') in 0.015166 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  path: Assets/Textures/Skill/136-Heart-Rip.png
+  artifactKey: Guid(d0ab90891a3fac24fafcb4629355e534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/136-Heart-Rip.png using Guid(d0ab90891a3fac24fafcb4629355e534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9353b9e3bfae69a31d2802b4ebf8be9c') in 0.016260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Textures/Skill/39-Hesitation.png
+  artifactKey: Guid(354bff0693cf5fc48b1109d6218c2839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/39-Hesitation.png using Guid(354bff0693cf5fc48b1109d6218c2839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6906b62657a6ae778e5385b006359c1') in 0.057496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.205775 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NE Icon.png
+  artifactKey: Guid(279a7f16bcc31014ea2d1e135f042805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NE Icon.png using Guid(279a7f16bcc31014ea2d1e135f042805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d593a2b39ca859a74f7db02661ce8ca') in 0.019238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 W Icon.png
+  artifactKey: Guid(f1737b486a23f634bb246de79b8d4f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 W Icon.png using Guid(f1737b486a23f634bb246de79b8d4f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881b8ccf4ca7d9763f8e1bf16ac9065b') in 0.013550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SW Icon.png
+  artifactKey: Guid(5a459e69f1835a3478400adb5f1138f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SW Icon.png using Guid(5a459e69f1835a3478400adb5f1138f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7b26767d4c555be363f0efd99b93e7') in 0.010896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NE Icon.png
+  artifactKey: Guid(dbd95e0b0a894e24c80c1feabe91c32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NE Icon.png using Guid(dbd95e0b0a894e24c80c1feabe91c32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0c82e5360b8e1fb6c567e2ba3440de') in 0.014717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NW Icon.png
+  artifactKey: Guid(0908671c4d9d28e4890451f605e68243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NW Icon.png using Guid(0908671c4d9d28e4890451f605e68243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d690cd8fc2ad31facb571eb106d116d') in 0.059285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 SW Icon.png
+  artifactKey: Guid(6d58acdac385dc546b74022fbe2912d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 SW Icon.png using Guid(6d58acdac385dc546b74022fbe2912d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c5ef780bfb7461faaa56608e3ea36f') in 0.013858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 E Icon.png
+  artifactKey: Guid(e0cd4bae4d3ba9448ae4405c2c6a2ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 E Icon.png using Guid(e0cd4bae4d3ba9448ae4405c2c6a2ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0694ed58c8369848c3e8e4062fafdf') in 0.013588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 NW Icon.png
+  artifactKey: Guid(fd91c57f9d8f2a3439b5b42ac9bda3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 NW Icon.png using Guid(fd91c57f9d8f2a3439b5b42ac9bda3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913be9a4940049d07759360a92a3b72d') in 0.012673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NW Icon.png
+  artifactKey: Guid(afa13aa3dd1037b4684bb0e9a8e18d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NW Icon.png using Guid(afa13aa3dd1037b4684bb0e9a8e18d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae43f8cc11fbf6120c79ff850c35142a') in 0.013199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 S Icon.png
+  artifactKey: Guid(4e424f4b39c7f494faefd764418e86a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 S Icon.png using Guid(4e424f4b39c7f494faefd764418e86a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe902ae7595f2d5bbec029a8df48d92') in 0.012018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 S Icon.png
+  artifactKey: Guid(3fcadb60666ffdc4ca5aaae842a00cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 S Icon.png using Guid(3fcadb60666ffdc4ca5aaae842a00cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0467f03dab4c151d6ebe243df2837244') in 0.011700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 S Icon.png
+  artifactKey: Guid(eec1e2ce573a2614cbf0ced6d609e47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 S Icon.png using Guid(eec1e2ce573a2614cbf0ced6d609e47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad825f8d51b75f4fade03e50e2eee41') in 0.012803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SE Icon.png
+  artifactKey: Guid(b654f5b026561954c82e36116cf969a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SE Icon.png using Guid(b654f5b026561954c82e36116cf969a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3a87e8c8d883ad3ab06946165b24e5') in 0.013194 seconds 
+AssetImportWorkerClient::OnTransportError - code=10054 error=현재 연결은 원격 호스트에 의해 강제로 끊겼습니다.
