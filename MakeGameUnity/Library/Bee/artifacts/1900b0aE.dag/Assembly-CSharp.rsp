@@ -378,8 +378,11 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Skill.cs"
 "Assets/Scripts/UI/EnemyHPBar.cs"
+"Assets/Scripts/UI/EXPBarController.cs"
 "Assets/Scripts/UI/PlayerHPBar.cs"
 "Assets/Scripts/UI/SidebarController.cs"
+"Assets/Scripts/UI/UIController.cs"
+"Assets/Textures/Test.cs"
 -langversion:9.0
 
 /deterministic
