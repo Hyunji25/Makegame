@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class EXPBarController : MonoBehaviour
 {
     private Slider EXPBar;
+    private int EXP; // 현재 EXP
+    private int MaxEXP; // 최대 EXP
+    private int Level; // 레벨
 
     private void Awake()
     {
@@ -14,7 +17,10 @@ public class EXPBarController : MonoBehaviour
 
     void Start()
     {
-        EXPBar.maxValue = 10;
+        EXP = 0;
+        MaxEXP = 5;
+        Level = 1;
+        EXPBar.maxValue = MaxEXP;
         EXPBar.value = EXPBar.maxValue;
     }
 
@@ -22,7 +28,18 @@ public class EXPBarController : MonoBehaviour
     {
         if (Input.GetKeyDown("a")) 
         {
+            ++EXP;
+        }
 
+        EXPBar.value = EXP;
+
+        if (EXP >= MaxEXP)
+        {
+            EXP -= MaxEXP;
+            ++Level;
+            MaxEXP += 5;
+            print(EXP);
+            print(Level);
         }
     }
 }
