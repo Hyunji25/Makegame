@@ -15,7 +15,34 @@ public class EXPBarController : MonoBehaviour
         EXPBar = GetComponent<Slider>();
     }
 
-    void Start()
+    private void Start()
+    {
+        EXPBar.maxValue = ControllerManager.GetInstance().EXP_MAX;
+        EXPBar.value = EXPBar.maxValue;
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            ControllerManager.GetInstance().EXP_MAX -= 1;
+        }
+
+        if (Input.GetMouseButton(1))
+        {
+            ControllerManager.GetInstance().EXP_MAX += 1;
+        }
+
+        EXPBar.value = ControllerManager.GetInstance().EXP_MAX;
+
+        if (ControllerManager.GetInstance().EXP_MAX <= 0)
+        {
+
+        }
+    }
+
+    /*
+    private void Start()
     {
         EXP = 0;
         MaxEXP = 5;
@@ -24,7 +51,7 @@ public class EXPBarController : MonoBehaviour
         EXPBar.value = EXPBar.maxValue;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown("a")) 
         {
@@ -42,6 +69,7 @@ public class EXPBarController : MonoBehaviour
             print(Level);
         }
     }
+     */
 }
 
 // 레벨 숫자 추가해야할듯
