@@ -120,7 +120,7 @@ public class BulletPattern : MonoBehaviour
         {
             fTime -= Time.deltaTime;
 
-            GameObject obj = Instantiate(Resources.Load("Prafebs/Twist");
+            GameObject obj = Instantiate(Resources.Load("Prefabs/Twist")) as GameObject;
             
             yield return null;
         }

@@ -354,6 +354,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/99. Resource/3 PSD logo Templates/Sample/Swiitch.cs"
 "Assets/99. Resource/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_AutoStopLoopedEffect.cs"
 "Assets/99. Resource/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_Demo_New.cs"
 "Assets/99. Resource/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_Demo_RandomDir.cs"
@@ -365,7 +366,7 @@
 "Assets/99. Resource/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightFlicker.cs"
 "Assets/99. Resource/Yoge/ParallaxBackground 1/Scripts/CameraMovement.cs"
 "Assets/99. Resource/Yoge/ParallaxBackground 1/Scripts/Parallax.cs"
-"Assets/DeepZone/3 PSD logo Templates/Sample/Swiitch.cs"
+"Assets/DataManager.cs"
 "Assets/FX/CFX_LightIntensityFade.cs"
 "Assets/Scripts/BackGroundController.cs"
 "Assets/Scripts/BossController.cs"
@@ -381,13 +382,13 @@
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Skill.cs"
-"Assets/Scripts/Twist.cs"
 "Assets/Scripts/UI/EnemyHPBar.cs"
 "Assets/Scripts/UI/EXPBarController.cs"
 "Assets/Scripts/UI/PlayerHPBar.cs"
 "Assets/Scripts/UI/SidebarController.cs"
 "Assets/Scripts/UI/UIController.cs"
 "Assets/Textures/Test.cs"
+"Assets/Twist.cs"
 -langversion:9.0
 
 /deterministic
