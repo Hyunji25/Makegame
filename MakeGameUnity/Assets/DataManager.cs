@@ -2,53 +2,69 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-
-[System.Serializable]
-class ItemForm
-{
-    public string A;
-    public string B;
-
-    ItemForm(string _A, string _B)
-    {
-        A = _A;
-        B = _B;
-    }
-}
+using System.Text;
 
 [System.Serializable]
 class DataForm
 {
-    public string Name;
-    public string Age;
+    public string name;
+    public string age;
 
-    ItemForm itemForm;
-
-    DataForm(string _name, string _age)
+    public DataForm(string _name, string _age)
     {
-        Name = _name;
-        Age = _age;
+        name = _name;
+        age = _age;
     }
 }
 
 public class DataManager : MonoBehaviour
 {
+    private int value;
+    private string userName;
+
     void Start()
     {
         var JsonData = Resources.Load<TextAsset>("saveFile/Data");
-
-        print(JsonData.ToString());
-
         DataForm form = JsonUtility.FromJson<DataForm>(JsonData.ToString());
 
-        print(form.Name);
-        print(form.Age);
+        value = int.Parse(form.age);
+        userName = form.name;
 
-        form.Name = "¿”≤©¡§";
-        form.Age = "38";
+        print(userName + " : " + value);
+    }
 
-        string data = JsonUtility.ToJson(form);
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            ++value;
+            print(value);
+        }
 
-        print(data);
+        if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            --value;
+            print(value);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            SaveData(userName, value.ToString());
+        }
+    }
+
+    public void SaveData(string _name, string _age)
+    {
+        DataForm form = new DataForm(_name, _age);
+
+        string Jsondata = JsonUtility.ToJson(form);
+
+        FileStream fileStream = new FileStream(
+            Application.dataPath + "/Resources/saveFile/Data.json", FileMode.Create);
+
+        byte[] data = Encoding.UTF8.GetBytes(Jsondata);
+
+        fileStream.Write(data, 0, data.Length);
+        fileStream.Close();
     }
 }

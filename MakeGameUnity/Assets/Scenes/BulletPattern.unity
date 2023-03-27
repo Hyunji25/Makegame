@@ -415,7 +415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1109151393
 Transform:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 311b4719d870d67459b93667ebc100cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pattern: 6
+  pattern: 0
   sprite: {fileID: 0}
 --- !u!1001 &2326988526048164291
 PrefabInstance:

@@ -34,7 +34,7 @@ public class PlayerHPBar : MonoBehaviour
 
         if (ControllerManager.GetInstance().Player_HP <= 0)
         {
-
+            // »ç¸Á
         }
     }
 }
