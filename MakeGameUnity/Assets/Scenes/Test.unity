@@ -280,7 +280,7 @@ SpriteRenderer:
   m_SortingLayerID: 1280268519
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 13a4b86f326c6c844aa0f867d95acc1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c8b415ef1e97c641990231cd58dc8ba, type: 3}
   m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 977905359}
   - component: {fileID: 977905358}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,7 +672,7 @@ Transform:
   - {fileID: 1805635269}
   - {fileID: 1491583752}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1463241817
 GameObject:
@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 1578368031}
   - component: {fileID: 1578368030}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,12 +919,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578368029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.65, y: -4.39, z: 0}
+  m_LocalPosition: {x: 5.11, y: -4.39, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1805635268
 GameObject:
@@ -1021,7 +1021,7 @@ GameObject:
   - component: {fileID: 2066090413}
   - component: {fileID: 2066090412}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1068,9 +1068,9 @@ SpriteRenderer:
   m_SortingLayerID: -1898528281
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c4f900416ad0e394baf479abd1f2d839, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e32cbd9bbfdcb584ba2d899586c3b88d, type: 3}
   m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.5, y: 1.5}
@@ -1088,7 +1088,7 @@ Transform:
   m_GameObject: {fileID: 2066090411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.02, y: -7.13, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
