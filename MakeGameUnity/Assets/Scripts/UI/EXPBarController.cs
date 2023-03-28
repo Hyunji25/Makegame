@@ -1,12 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class EXPBarController : MonoBehaviour
 {
     private Slider EXPBar;
-    private int Level;
+    public int level;
+    private UnityEngine.UI.Text LevelText;
 
     private void Awake()
     {
@@ -16,7 +19,8 @@ public class EXPBarController : MonoBehaviour
     {
         EXPBar.maxValue = 10;
         EXPBar.value = ControllerManager.GetInstance().EXP;
-        Level = 0;
+        level = 0;
+        LevelText.text = "0";
     }
 
     private void Update()
@@ -38,12 +42,18 @@ public class EXPBarController : MonoBehaviour
 
         if (ControllerManager.GetInstance().EXP >= EXPBar.maxValue)
         {
-            ++Level;
+            ++level;
             ControllerManager.GetInstance().EXP = 0;
             EXPBar.maxValue += 5;
+            LevelText.text = "1";
 
-            print(Level);
+            print(level);
             print(EXPBar.maxValue);
         }
+    }
+
+    internal static object GetInstance()
+    {
+        throw new NotImplementedException();
     }
 }

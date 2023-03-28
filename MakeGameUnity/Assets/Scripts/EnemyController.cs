@@ -15,6 +15,15 @@ public class EnemyController : MonoBehaviour
     private bool Attack;
     private bool SkillAttack;
 
+    private static EnemyController Instance = null;
+
+    public static EnemyController GetInstance()
+    {
+        if (Instance == null)
+            Instance = new EnemyController();
+        return Instance;
+    }
+
     private void Awake()
     {
         Target = GameObject.Find("Player");

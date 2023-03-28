@@ -49,8 +49,6 @@ public class BackGroundController : MonoBehaviour
 
     void Start()
     {
-       
-
         // 구성요소에 포함된 이미지를 받아온다
         sprite = spriteRenderer.sprite;
 
