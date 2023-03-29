@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class HPTest : MonoBehaviour
 {
     public GameObject ui;
     public RectTransform uiTranspos;
