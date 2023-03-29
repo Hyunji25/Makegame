@@ -59,8 +59,9 @@ public class EnemyManager : MonoBehaviour
             // Enemy HP UI 복제
             GameObject Bar = Instantiate(HPPrefab);
 
+            if (GameObject.Find("EnemyHPCanvas") != null)
             // 복제된 UI를 캔버스에 위치시킨다
-            Bar.transform.SetParent(GameObject.Find("EnemyHPCanvas").transform);
+                Bar.transform.SetParent(GameObject.Find("EnemyHPCanvas").transform);
 
             // Enemy 작동 스크립트 포함
             //Obj.AddComponent<EnemyController>();

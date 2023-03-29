@@ -85,6 +85,7 @@ public class EnemyController : MonoBehaviour
             {
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
+                Destroy(GameObject.Find("HP"));
             }
         }
     }

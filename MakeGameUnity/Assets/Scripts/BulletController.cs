@@ -57,7 +57,6 @@ public class BulletController : MonoBehaviour
             // 진동 효과 컨트롤러 생성
             camera.AddComponent<CameraController>();
         }
-            
 
         // 총알의 충돌 횟수가 0이 되면 총알 삭제
         if (hp == 0)

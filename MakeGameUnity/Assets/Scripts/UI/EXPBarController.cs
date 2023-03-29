@@ -20,7 +20,6 @@ public class EXPBarController : MonoBehaviour
         EXPBar.maxValue = 10;
         EXPBar.value = ControllerManager.GetInstance().EXP;
         level = 0;
-        //LevelText.text = "0";
     }
 
     private void Update()
@@ -45,7 +44,6 @@ public class EXPBarController : MonoBehaviour
             ++level;
             ControllerManager.GetInstance().EXP = 0;
             EXPBar.maxValue += 5;
-            //LevelText.text = "1";
 
             print(level);
             print(EXPBar.maxValue);

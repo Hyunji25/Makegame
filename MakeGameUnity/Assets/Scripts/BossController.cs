@@ -42,7 +42,7 @@ public class BossController : MonoBehaviour
     {
         CoolDown = 1.5f;
         Speed = 0.3f;
-        HP = 30000;
+        HP = 5;
 
         SkillAttack = false;
         Attack = false;
@@ -88,6 +88,21 @@ public class BossController : MonoBehaviour
                 case STATE_SLIDE:
                     onSlide();
                     break;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            --HP;
+
+            if (HP <= 0)
+            {
+                Anim.SetTrigger("Die");
+                GetComponent<CapsuleCollider2D>().enabled = false;
+                Destroy(gameObject, 0.016f);
             }
         }
     }
