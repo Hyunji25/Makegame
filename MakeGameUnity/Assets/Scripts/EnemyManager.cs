@@ -67,7 +67,7 @@ public class EnemyManager : MonoBehaviour
             //Obj.AddComponent<EnemyController>();
 
             // 클론의 위치를 초기화
-            Obj.transform.position = new Vector3(18.0f, Random.Range(-8.5f, -6.5f), 0.0f);
+            Obj.transform.position = new Vector3(18.0f, Random.Range(-5.6f, -2.7f), 0.0f);
             //Obj.transform.position = new Vector3(18.0f, -7.5f, 0.0f);
 
             // 클론의 이름 초기화
@@ -83,7 +83,7 @@ public class EnemyManager : MonoBehaviour
             enemyHPBar.Target = Obj;
 
             // 1.5초 휴식
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(5.0f);
         }
     }
 

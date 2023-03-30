@@ -59,9 +59,9 @@ public class BossController : MonoBehaviour
         float result = Target.transform.position.x - transform.position.x;
 
         if (result < 0.0f)
-            Brenderer.flipX = true;
-        else if (result > 0.0f)
             Brenderer.flipX = false;
+        else if (result > 0.0f)
+            Brenderer.flipX = true;
 
         if (ControllerManager.GetInstance().DirRight)
             transform.position -= new Vector3(1.0f, 0.0f, 0.0f) * Time.deltaTime;
@@ -102,7 +102,7 @@ public class BossController : MonoBehaviour
             {
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
-                Destroy(gameObject, 0.016f);
+                Destroy(gameObject, 1.0f);
             }
         }
     }

@@ -49,15 +49,17 @@ public class EnemyController : MonoBehaviour
 
         float Distance = Vector3.Distance(Target.transform.position, transform.position);
 
-        if (Distance < 0.5f)
+        if (Distance < 2.5f)
         {
+            print("공격");
             Attack = true;
             Anim.SetTrigger("Attack");
         }
-        else if (Distance < 8.0f && !Attack)
+        else if (Distance < 10.0f && !Attack)
         {
             if (SkillAttack)
             {
+                print("스킬");
                 Attack = true;
                 SkillAttack = false;
                 StartCoroutine(Skill());
@@ -100,7 +102,7 @@ public class EnemyController : MonoBehaviour
             yield return null;
         }
 
-        CoolDown = 5.0f;
+        CoolDown = 10.0f;
         SkillAttack = true;
     }
 
