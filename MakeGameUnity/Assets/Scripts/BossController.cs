@@ -41,7 +41,7 @@ public class BossController : MonoBehaviour
     void Start()
     {
         CoolDown = 1.5f;
-        Speed = 0.3f;
+        Speed = 1.0f;
         HP = 5;
 
         SkillAttack = false;
@@ -102,7 +102,7 @@ public class BossController : MonoBehaviour
             {
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
-                Destroy(gameObject, 1.0f);
+                Destroy(gameObject, 0.5f);
             }
         }
     }

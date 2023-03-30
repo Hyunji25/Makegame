@@ -134,15 +134,12 @@ public class PlayerController : MonoBehaviour
                 transform.position += Movement;
         }
 
-
-
         if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) ||
             Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             ControllerManager.GetInstance().DirRight = false;
             ControllerManager.GetInstance().DirLeft = false;
         }
-
 
         // ** 플레이어가 바라보고있는 방향에 따라 이미지 반전 설정.
         if (Direction < 0)
@@ -154,7 +151,6 @@ public class PlayerController : MonoBehaviour
             playerRenderer.flipX = false;
             DirRight = true;
         }
-
 
         // ** 좌측 쉬프트키를 입력한다면.....
         if (Input.GetKey(KeyCode.LeftShift))
@@ -171,7 +167,7 @@ public class PlayerController : MonoBehaviour
             GameObject Obj = Instantiate(BulletPrefab);
 
             // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
-            Obj.transform.position = transform.position;
+            Obj.transform.position = new Vector3(transform.position.x + 1.0f, transform.position.y + 0.75f, transform.position.z);
 
             // ** 총알의 BullerController 스크립트를 받아온다.
             BulletController Controller = Obj.AddComponent<BulletController>();
@@ -185,14 +181,16 @@ public class PlayerController : MonoBehaviour
             // ** 총알의 SpriteRenderer를 받아온다.
             SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
 
+            buleltRenderer.transform.rotation = Quaternion.Euler(0, 180, 0);
             // ** 총알의 이미지 반전 상태를 플레이어의 이미지 반전 상태로 설정한다.
-            buleltRenderer.flipY = playerRenderer.flipX;
+            //buleltRenderer.flipY = playerRenderer.flipX;
+            buleltRenderer.flipX = playerRenderer.flipX;
 
             // ** 모든 설정이 종료되었다면 저장소에 보관한다.
             Bullets.Add(Obj);
         }
 
-        // ** 플레이의 움직임에 따라 이동 모션을 실행 한다.
+        // ** 플레이의 움직임에 따라 이동 모션을 실행 z한다.
         animator.SetFloat("Speed", Hor);
 
         //print(HP);
@@ -208,6 +206,18 @@ public class PlayerController : MonoBehaviour
             {
                 OnDeath();
             }
+        }
+
+        // 충돌한 대상을 삭제한다
+        if (collision.transform.tag == "MonsterAttack")
+            --HP;
+        else
+        {
+            // 진동 효과를 생성할 관리자 생성
+            GameObject camera = new GameObject("Camera Test");
+
+            // 진동 효과 컨트롤러 생성
+            camera.AddComponent<CameraController>();
         }
     }
 

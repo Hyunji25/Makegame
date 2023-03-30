@@ -388,6 +388,7 @@
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/LevelTxt.cs"
+"Assets/Scripts/MonsterAttack.cs"
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Skill.cs"
