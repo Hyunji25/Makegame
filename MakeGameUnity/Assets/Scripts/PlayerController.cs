@@ -152,10 +152,12 @@ public class PlayerController : MonoBehaviour
             DirRight = true;
         }
 
+        /*
         // ** 좌측 쉬프트키를 입력한다면.....
         if (Input.GetKey(KeyCode.LeftShift))
             // ** 피격
             OnHit();
+        */
 
         // ** 스페이스바를 입력한다면..
         if (Input.GetKeyDown(KeyCode.Space))
@@ -193,7 +195,10 @@ public class PlayerController : MonoBehaviour
         // ** 플레이의 움직임에 따라 이동 모션을 실행 z한다.
         animator.SetFloat("Speed", Hor);
 
-        //print(HP);
+        if (HP <= 0)
+        {
+            OnDeath();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -201,16 +206,12 @@ public class PlayerController : MonoBehaviour
         if (collision.tag == "EnemyBullet")
         {
             --HP;
-
-            if (HP <= 0)
-            {
-                OnDeath();
-            }
+            OnHit();
         }
 
         // 충돌한 대상을 삭제한다
         if (collision.transform.tag == "MonsterAttack")
-            --HP;
+            print("공격 받음");
         else
         {
             // 진동 효과를 생성할 관리자 생성
@@ -290,6 +291,12 @@ public class PlayerController : MonoBehaviour
         // ** 함수가 실행되면 피격모션이 비활성화 된다.
         // ** 함수는 애니매이션 클립의 이벤트 프레임으로 삽입됨.
         onDeath = false;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        HP -= damage;
+        OnHit();
     }
 }
 

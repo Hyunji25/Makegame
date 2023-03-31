@@ -6,7 +6,7 @@ public class BossController : MonoBehaviour
 {
     const int STATE_WALK = 1;
     const int STATE_ATTACK = 2;
-    const int STATE_SLIDE = 3;
+    const int STATE_SKILL = 3;
 
     private GameObject Target;
 
@@ -28,6 +28,12 @@ public class BossController : MonoBehaviour
     private bool active;
 
     private int choice;
+
+    private float curTime;
+    private float coolTime = 0.5f;
+
+    public Transform pos;
+    public Vector2 boxSize;
 
     private void Awake()
     {
@@ -85,8 +91,8 @@ public class BossController : MonoBehaviour
                     onAttack();
                     break;
 
-                case STATE_SLIDE:
-                    onSlide();
+                case STATE_SKILL:
+                    onSkill();
                     break;
             }
         }
@@ -102,7 +108,7 @@ public class BossController : MonoBehaviour
             {
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
-                Destroy(gameObject, 0.5f);
+                Destroy(gameObject, 1.0f);
             }
         }
     }
@@ -139,8 +145,8 @@ public class BossController : MonoBehaviour
         // * [return]
         // * 1 : 이동           STATE_WALK
         // * 2 : 공격          STATE_ATTACK
-        // * 3 : 슬라이딩   STATE_SLIDE
-        return Random.Range(STATE_WALK, STATE_SLIDE + 1);
+        // * 3 : 스킬   STATE_SKILL
+        return Random.Range(STATE_WALK, STATE_SKILL + 1);
     }
 
 
@@ -157,8 +163,24 @@ public class BossController : MonoBehaviour
 
     private void onAttack()
     {
+        Attack = true;
+        if (curTime <= 0)
         {
-            //print("onAttack");
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(pos.position, boxSize, 0);
+            foreach (Collider2D collider in colliders)
+            {
+                if (collider.tag == "Player")
+                {
+                    collider.GetComponent<PlayerController>().TakeDamage(1);
+                }
+            }
+
+            Anim.SetTrigger("Attack");
+            curTime = coolTime;
+        }
+        else
+        {
+            curTime -= Time.deltaTime;
         }
 
         active = true;
@@ -192,13 +214,19 @@ public class BossController : MonoBehaviour
             active = true;
     }
 
-    private void onSlide()
+    private void onSkill()
     {
         {
-            //print("onSlide");
+            //print("onSkill");
         }
 
         active = true;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(pos.position, boxSize);
     }
 }
 

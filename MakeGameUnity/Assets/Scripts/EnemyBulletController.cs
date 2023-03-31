@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyBulletController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class EnemyBulletController : MonoBehaviour
     {
         Anim = GetComponent<Animator>();
         animator = this.GetComponent<Animator>();
+        Player = GameObject.Find("Player");
     }
 
     void Start()
@@ -25,7 +27,7 @@ public class EnemyBulletController : MonoBehaviour
     {
         transform.position = new Vector3(
             Player.transform.position.x,
-            Player.transform.position.y + 1.0f,
+            Player.transform.position.y + 4.0f,
             Player.transform.position.z);
         OnSkill();
         Destroy(this.gameObject, 1.0f);
@@ -44,5 +46,11 @@ public class EnemyBulletController : MonoBehaviour
     private void SetSkill()
     {
         onSkill = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Player")
+            Destroy(this.gameObject, 0.016f);
     }
 }

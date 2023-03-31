@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,12 @@ public class EnemyController : MonoBehaviour
     private float CoolDown;
     private bool Attack;
     private bool SkillAttack;
+
+    private float curTime;
+    private float coolTime = 0.5f;
+
+    public Transform pos;
+    public Vector2 boxSize;
 
     private static EnemyController Instance = null;
 
@@ -51,9 +58,27 @@ public class EnemyController : MonoBehaviour
 
         if (Distance < 2.5f)
         {
-            print("공격");
-            Attack = true;
-            Anim.SetTrigger("Attack");
+            if (curTime <= 0)
+            {
+                print("공격");
+                Attack = true;
+
+                Collider2D[] colliders = Physics2D.OverlapBoxAll(pos.position, boxSize, 0);
+                foreach (Collider2D collider in colliders)
+                {
+                    if (collider.tag == "Player")
+                    {
+                        collider.GetComponent<PlayerController>().TakeDamage(1);
+                    }
+                }
+
+                Anim.SetTrigger("Attack");
+                curTime = coolTime;
+            }
+            else
+            {
+                curTime -= Time.deltaTime;
+            }
         }
         else if (Distance < 10.0f && !Attack)
         {
@@ -110,5 +135,12 @@ public class EnemyController : MonoBehaviour
     private void DestroyEnemy()
     {
         Destroy(gameObject, 0.016f);
+    }
+
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(pos.position, boxSize);
     }
 }

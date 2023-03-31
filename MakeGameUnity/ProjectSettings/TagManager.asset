@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - EnemyBullet
   - MonsterAttack
+  - Enemy
   layers:
   - Default
   - TransparentFX
