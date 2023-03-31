@@ -105,6 +105,7 @@ public class PlayerController : MonoBehaviour
             Ver * Time.deltaTime * (Speed * 0.5f),
             0.0f);
 
+        //transform.Translate(new Vector3(transform.position.x, transform.position.y + Movement.y, transform.position.z));
         transform.position += new Vector3(0.0f, Movement.y, 0.0f);
 
         // ** Hor이 0이라면 멈춰있는 상태이므로 예외처리를 해준다. 
@@ -203,15 +204,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "EnemyBullet")
+        // 충돌한 대상을 삭제한다
+        if (collision.transform.tag == "Enemy")
         {
             --HP;
             OnHit();
         }
-
-        // 충돌한 대상을 삭제한다
-        if (collision.transform.tag == "MonsterAttack")
-            print("공격 받음");
         else
         {
             // 진동 효과를 생성할 관리자 생성

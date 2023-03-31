@@ -12,12 +12,12 @@ public class EnemyController : MonoBehaviour
     private Animator Anim;
     private Vector3 Movement;
 
-    private float CoolDown;
+    //private float CoolDown;
     private bool Attack;
     private bool SkillAttack;
 
     private float curTime;
-    private float coolTime = 0.5f;
+    private float coolTime = 1.0f;
 
     public Transform pos;
     public Vector2 boxSize;
@@ -46,7 +46,7 @@ public class EnemyController : MonoBehaviour
 
         Attack = false;
         SkillAttack = true;
-        CoolDown = 5.0f;
+        //CoolDown = 5.0f;
     }
 
     void Update()
@@ -56,7 +56,7 @@ public class EnemyController : MonoBehaviour
 
         float Distance = Vector3.Distance(Target.transform.position, transform.position);
 
-        if (Distance < 2.5f)
+        if (Distance < 3.0f)
         {
             if (curTime <= 0)
             {
@@ -80,6 +80,7 @@ public class EnemyController : MonoBehaviour
                 curTime -= Time.deltaTime;
             }
         }
+        /*
         else if (Distance < 10.0f && !Attack)
         {
             if (SkillAttack)
@@ -90,6 +91,7 @@ public class EnemyController : MonoBehaviour
                 StartCoroutine(Skill());
             }
         }
+        */
         else
         {
             Attack = false;
@@ -99,6 +101,11 @@ public class EnemyController : MonoBehaviour
         {
             Anim.SetFloat("Speed", Movement.x);
             transform.position -= Movement * Time.deltaTime;
+        }
+
+        if (Distance >= 25.0f)
+        {
+            Destroy(gameObject, 0.016f);
         }
     }
 
@@ -112,11 +119,11 @@ public class EnemyController : MonoBehaviour
             {
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
-                Destroy(GameObject.Find("HP"));
             }
         }
     }
 
+    /*
     IEnumerator Skill()
     {
         Anim.SetTrigger("Skill");
@@ -130,7 +137,7 @@ public class EnemyController : MonoBehaviour
         CoolDown = 10.0f;
         SkillAttack = true;
     }
-
+    */
 
     private void DestroyEnemy()
     {

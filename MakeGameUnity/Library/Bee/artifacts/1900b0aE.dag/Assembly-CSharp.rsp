@@ -398,6 +398,8 @@
 "Assets/Scripts/UI/PlayerHPBar.cs"
 "Assets/Scripts/UI/SidebarController.cs"
 "Assets/Scripts/UI/UIController.cs"
+"Assets/TestEXP.cs"
+"Assets/TestMove.cs"
 "Assets/Textures/HP/HP_Test.cs"
 "Assets/Textures/HP/HP_Test2.cs"
 "Assets/Textures/Test.cs"

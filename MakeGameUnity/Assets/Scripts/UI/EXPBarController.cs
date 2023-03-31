@@ -1,19 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
 
 public class EXPBarController : MonoBehaviour
 {
     private Slider EXPBar;
     public int level;
-    private UnityEngine.UI.Text LevelText;
+    private GameObject LevelText;
 
     private void Awake()
     {
         EXPBar = GetComponent<Slider>();
+        LevelText = GameObject.Find("Level");
     }
     private void Start()
     {
@@ -22,7 +24,12 @@ public class EXPBarController : MonoBehaviour
         level = 0;
     }
 
-    private void Update()
+    private int GetLevel()
+    {
+        return level;
+    }
+
+    private void Update(int level)
     {
         if (Input.GetKeyUp(KeyCode.N))
         {
@@ -44,6 +51,7 @@ public class EXPBarController : MonoBehaviour
             ++level;
             ControllerManager.GetInstance().EXP = 0;
             EXPBar.maxValue += 5;
+            LevelText.GetComponent<Text>().text = level.ToString();
 
             print(level);
             print(EXPBar.maxValue);
