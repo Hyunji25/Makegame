@@ -1,0 +1,353 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16194 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+50290
+Successfully changed project path to: C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity
+C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16364] Host "[IP] 192.168.0.176 [Port] 0 [Flags] 2 [Guid] 1671618034 [EditorId] 1671618034 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [16364] Host "[IP] 192.168.0.176 [Port] 0 [Flags] 2 [Guid] 1671618034 [EditorId] 1671618034 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 63.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/SGA/Desktop/test/Makegame/MakeGameUnity/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006041 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 185 ms
+Refreshing native plugins compatible for Editor in 59.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.706 seconds
+Domain Reload Profiling:
+	ReloadAssembly (706ms)
+		BeginReloadAssembly (60ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (557ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (84ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (407ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (239ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (72ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004101 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Desktop\test\Makegame\MakeGameUnity\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.664 seconds
+Domain Reload Profiling:
+	ReloadAssembly (665ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (520ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (178ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (113.4 KB). Loaded Objects now: 3626.
+Memory consumption went from 119.7 MB to 119.6 MB.
+Total: 2.156500 ms (FindLiveObjects: 0.162500 ms CreateObjectMapping: 0.069900 ms MarkObjects: 1.847300 ms  DeleteObjects: 0.076100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3826.452417 seconds.
+  path: Assets/Icons UI/Icons color/3.png
+  artifactKey: Guid(a5b4189af3bc18f49bf108392ac887d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/3.png using Guid(a5b4189af3bc18f49bf108392ac887d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60c760a02cc2132d099a06b08c33fb9') in 0.085158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Icons UI/Icons color/10.png
+  artifactKey: Guid(732c697a802de274e9e45e0ba7407656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/10.png using Guid(732c697a802de274e9e45e0ba7407656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ca523b610e62a8391dad5e0bd99501') in 0.018594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Icons UI/Icons color/53.png
+  artifactKey: Guid(e8538d70a6a8bb640afcf63239090800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/53.png using Guid(e8538d70a6a8bb640afcf63239090800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb3d52f946e01c8121d4be1bd8ea297c') in 0.022417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Icons UI/Icons color/32.png
+  artifactKey: Guid(875bd9dd7c4dfa54fb7dc1953b080200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/32.png using Guid(875bd9dd7c4dfa54fb7dc1953b080200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab758c71fbc1c7beb874114f462c3b9') in 0.019765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Icons UI/Icons color/50.png
+  artifactKey: Guid(81884344b6028f74e95114e5a8ae0b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/50.png using Guid(81884344b6028f74e95114e5a8ae0b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36637a118ce3218e9d0b1907b70be19c') in 0.018372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Icons UI/Icons color/57.png
+  artifactKey: Guid(d75b0da6b364abc4da3ed950a85d87ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/57.png using Guid(d75b0da6b364abc4da3ed950a85d87ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3bf9292ba7bc5bb01ea3e080e798e1') in 0.017966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Icons UI/Icons color/48.png
+  artifactKey: Guid(8391ea8ea43d79c4db956640df46ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/48.png using Guid(8391ea8ea43d79c4db956640df46ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e8780595162116fdf478bc9ee784d6') in 0.016673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Icons UI/Icons color/25.png
+  artifactKey: Guid(cd72f0bf85be8614d8aa531a2e5dced4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/25.png using Guid(cd72f0bf85be8614d8aa531a2e5dced4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db9ae8e7a6d684b6ebb6774ab328ec4') in 0.018933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Icons UI/Icons color/4.png
+  artifactKey: Guid(eba4ccfe53daaf547aa3be123ddbc586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/4.png using Guid(eba4ccfe53daaf547aa3be123ddbc586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c622e590643ac0fa7dd266c61f36ea') in 0.018167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Icons UI/Icons color/60.png
+  artifactKey: Guid(9a6485cbaaee0e4439014852db82347a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/60.png using Guid(9a6485cbaaee0e4439014852db82347a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22490143ee4affde68a525d6899ae12') in 0.021597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Icons UI/Icons color/37.png
+  artifactKey: Guid(f1703d00d6e669540b845ae4bf1cf4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/37.png using Guid(f1703d00d6e669540b845ae4bf1cf4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219e446db23f69b4e5240e7f95047f06') in 0.019594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Icons UI/Icons color/6.png
+  artifactKey: Guid(ad1a3a02ee4764b49b608065f61d43b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/6.png using Guid(ad1a3a02ee4764b49b608065f61d43b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb99c544e06b32143e2dc5b6cca4ed8') in 0.020500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Icons UI/Icons color/54.png
+  artifactKey: Guid(5d05c4accf111e9499be3af5882406fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/54.png using Guid(5d05c4accf111e9499be3af5882406fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994c51dba5d56ea41c1a23941d767a66') in 0.020070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Icons UI/Icons color/22.png
+  artifactKey: Guid(931ed2b1ca8cd0d4d846e3fc10ad1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/22.png using Guid(931ed2b1ca8cd0d4d846e3fc10ad1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14154ae562d951cadd176531dd792306') in 0.017886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Icons UI/Icons color/42.png
+  artifactKey: Guid(8e81970cbbf3c3c4ea1d43b0ac37d13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/42.png using Guid(8e81970cbbf3c3c4ea1d43b0ac37d13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605b14e7af1e345abcc5b85a5b24ff88') in 0.018386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Icons UI/Icons color/64.png
+  artifactKey: Guid(236f0d589d73f0c41a36050c10fedd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/64.png using Guid(236f0d589d73f0c41a36050c10fedd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7226b6a2756da286b344550d317f20e4') in 0.020127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Icons UI/Icons color/24.png
+  artifactKey: Guid(d94497570204b4246929402b57e46c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/24.png using Guid(d94497570204b4246929402b57e46c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0240e343044081cd2cae75ba67e678d7') in 0.017310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Icons UI/Icons color/20.png
+  artifactKey: Guid(c480521b0e2d0da48bf1e1e36e655ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/20.png using Guid(c480521b0e2d0da48bf1e1e36e655ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51c8de6ab59c774c0782834e2108f7e') in 0.016942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Icons UI/Icons color/43.png
+  artifactKey: Guid(2c0597ae298529147a83667cb2e03cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/43.png using Guid(2c0597ae298529147a83667cb2e03cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e861faa033a69ca58fbe19e62390eb') in 0.016979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Icons UI/Icons color/30.png
+  artifactKey: Guid(3f08a934aedd5124ba7337fabe6a5836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/30.png using Guid(3f08a934aedd5124ba7337fabe6a5836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4434a197309ab38972d3abf2c731b488') in 0.020451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.076457 seconds.
+  path: Assets/Icons UI/Icons color/69.png
+  artifactKey: Guid(87ada7b2ea52e9841bd5bb9fed840073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/69.png using Guid(87ada7b2ea52e9841bd5bb9fed840073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1cf043dd9f846e3383376f69aced33') in 0.023940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Icons UI/Icons color/78.png
+  artifactKey: Guid(02d5b819751f21b4eaf6306ecaeee795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/78.png using Guid(02d5b819751f21b4eaf6306ecaeee795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f59e1fb0f567299fd60d1cf00cd04a') in 0.019459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Icons UI/Icons color/90.png
+  artifactKey: Guid(cef828bf87076e9409e35a8f0ef63485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/90.png using Guid(cef828bf87076e9409e35a8f0ef63485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b072ed10d8cdd86c0538a5655e78d30') in 0.018277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Icons UI/Icons color/83.png
+  artifactKey: Guid(1c30c581dd6417b47a91b8863b88800d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/83.png using Guid(1c30c581dd6417b47a91b8863b88800d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10449a6ff0cd8342ae526e9852ad493') in 0.017896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Icons UI/Icons color/91.png
+  artifactKey: Guid(9330b3ffe0fa2dc47a57eb5df77dfcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/91.png using Guid(9330b3ffe0fa2dc47a57eb5df77dfcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9398ded65b9799c376eeebc22245cacf') in 0.017570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Icons UI/Icons color/94.png
+  artifactKey: Guid(0696ef0b2b12b934a9019221c6a63a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/94.png using Guid(0696ef0b2b12b934a9019221c6a63a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e623a62316d3fe84435b03d5b367f43') in 0.016784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Icons UI/Icons color/86.png
+  artifactKey: Guid(e375364c4c6339049a46c6a5684b27c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/86.png using Guid(e375364c4c6339049a46c6a5684b27c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec43873d509d0bfcf01603b5f73d3ec2') in 0.018371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Icons UI/Icons color/79.png
+  artifactKey: Guid(9ea0bad3ece5d354d96f29b80df36787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/79.png using Guid(9ea0bad3ece5d354d96f29b80df36787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424f719235063cfe8af88d8b3dbbb87e') in 0.020803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Icons UI/Icons color/71.png
+  artifactKey: Guid(2179029308028854b9ec1f81423301f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/71.png using Guid(2179029308028854b9ec1f81423301f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc94d5c5612e64c9230b8da42d0dc6f') in 0.021057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Icons UI/Icons color/82.png
+  artifactKey: Guid(7dcc65e05ef3ec743bba94706b43f5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/82.png using Guid(7dcc65e05ef3ec743bba94706b43f5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835702176a683a040aef26a4d8941cdb') in 0.020228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Icons UI/Icons color/96.png
+  artifactKey: Guid(34db34b9a02b2f0499b98e78ebec7f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons UI/Icons color/96.png using Guid(34db34b9a02b2f0499b98e78ebec7f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2822209a214644fc98c1314f15df30d7') in 0.018913 seconds 

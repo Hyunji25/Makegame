@@ -24,12 +24,7 @@ public class EXPBarController : MonoBehaviour
         level = 0;
     }
 
-    private int GetLevel()
-    {
-        return level;
-    }
-
-    private void Update(int level)
+    private void Update()
     {
         if (Input.GetKeyUp(KeyCode.N))
         {
@@ -48,18 +43,18 @@ public class EXPBarController : MonoBehaviour
 
         if (ControllerManager.GetInstance().EXP >= EXPBar.maxValue)
         {
-            ++level;
-            ControllerManager.GetInstance().EXP = 0;
-            EXPBar.maxValue += 5;
-            LevelText.GetComponent<Text>().text = level.ToString();
+            LevelUp();
 
             print(level);
             print(EXPBar.maxValue);
         }
     }
 
-    internal static object GetInstance()
+    private void LevelUp()
     {
-        throw new NotImplementedException();
+        level += 1;
+        ControllerManager.GetInstance().EXP = 0;
+        EXPBar.maxValue += 5;
+        LevelText.GetComponent<Text>().text = level.ToString();
     }
 }

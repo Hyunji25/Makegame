@@ -14,7 +14,6 @@ public class EnemyController : MonoBehaviour
 
     //private float CoolDown;
     private bool Attack;
-    private bool SkillAttack;
 
     private float curTime;
     private float coolTime = 1.0f;
@@ -45,7 +44,6 @@ public class EnemyController : MonoBehaviour
         HP = 3;
 
         Attack = false;
-        SkillAttack = true;
         //CoolDown = 5.0f;
     }
 

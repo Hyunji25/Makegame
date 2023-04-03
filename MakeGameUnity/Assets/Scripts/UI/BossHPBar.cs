@@ -16,7 +16,7 @@ public class BossHPBar : MonoBehaviour
 
     void Start()
     {
-        offset = new Vector3(0.0f, 0.8f, 0.0f);
+        offset = new Vector3(0.0f, 4.2f, 0.0f);
         if (BHPBar != null)
         {
             BHPBar.maxValue = GameObject.Find("Boss").GetComponent<BossController>().HP;
