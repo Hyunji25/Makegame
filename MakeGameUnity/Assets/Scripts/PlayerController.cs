@@ -88,13 +88,18 @@ public class PlayerController : MonoBehaviour
         for (int i = 0; i < 7; ++i)
             stageBack[i] = GameObject.Find(i.ToString());
 
-        HP = 3;
+        HP = 10;
     }
 
     // ** 유니티 기본 제공 함수
     // ** 프레임마다 반복적으로 실행되는 함수.
     void Update()
     {
+        if (HP <= 0)
+        {
+            OnDeath();
+        }
+
         // **  Input.GetAxis =     -1 ~ 1 사이의 값을 반환함. 
         float Hor = Input.GetAxisRaw("Horizontal"); // -1 or 0 or 1 셋중에 하나를 반환.
         float Ver = Input.GetAxisRaw("Vertical"); // -1 or 0 or 1 셋중에 하나를 반환.
@@ -195,11 +200,6 @@ public class PlayerController : MonoBehaviour
 
         // ** 플레이의 움직임에 따라 이동 모션을 실행 z한다.
         animator.SetFloat("Speed", Hor);
-
-        if (HP <= 0)
-        {
-            OnDeath();
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

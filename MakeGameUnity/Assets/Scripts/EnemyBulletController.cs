@@ -5,7 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EnemyBulletController : MonoBehaviour
 {
-    private float Speed;
+    //private float Speed;
     private Animator Anim;
     public GameObject Player;
     private Animator animator;
@@ -20,7 +20,7 @@ public class EnemyBulletController : MonoBehaviour
 
     void Start()
     {
-        Speed = 10.0f;
+        //Speed = 10.0f;
     }
     
     void Update()

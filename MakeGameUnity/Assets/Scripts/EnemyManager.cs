@@ -44,7 +44,7 @@ public class EnemyManager : MonoBehaviour
 
             // Enemy로 사용할 원형 객체
             Prefab = Resources.Load("Prefabs/Enemy/Enemy") as GameObject;
-            HPPrefab = Resources.Load("Prefabs/HP") as GameObject;
+            //HPPrefab = Resources.Load("Prefabs/HP") as GameObject;
         }
     }
 
@@ -57,11 +57,11 @@ public class EnemyManager : MonoBehaviour
             GameObject Obj = Instantiate(Prefab);
 
             // Enemy HP UI 복제
-            GameObject Bar = Instantiate(HPPrefab);
+            //GameObject Bar = Instantiate(HPPrefab);
 
-            if (GameObject.Find("EnemyHPCanvas") != null)
+            //if (GameObject.Find("EnemyHPCanvas") != null)
             // 복제된 UI를 캔버스에 위치시킨다
-                Bar.transform.SetParent(GameObject.Find("EnemyHPCanvas").transform);
+            //    Bar.transform.SetParent(GameObject.Find("EnemyHPCanvas").transform);
 
             // Enemy 작동 스크립트 포함
             //Obj.AddComponent<EnemyController>();
@@ -77,10 +77,10 @@ public class EnemyManager : MonoBehaviour
             Obj.transform.SetParent(Parent.transform);
 
             // UI 객체가 들고 있는 스크립트에 접근
-            EnemyHPBar enemyHPBar = Bar.GetComponent<EnemyHPBar>();
+            //EnemyHPBar enemyHPBar = Bar.GetComponent<EnemyHPBar>();
 
             // 스크립트의 Target을 지금 생성된 Enemy로 셋팅
-            enemyHPBar.Target = Obj;
+            //enemyHPBar.Target = Obj;
 
             // 1.5초 휴식
             yield return new WaitForSeconds(5.0f);

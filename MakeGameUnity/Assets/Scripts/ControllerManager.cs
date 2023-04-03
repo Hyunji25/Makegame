@@ -17,18 +17,20 @@ public class ControllerManager
     public bool DirRight;
 
     public float PlayerSpeed = 5.0f;
-    public float BulletSpeed = 10.0f;
     public int Player_HP = 100;
     public int EXP = 0;
-    public float BulletDamage = 1;
-
+    
     public int SkillPoint = 0; // 스킬 포인트
 
-    // 스킬 온오프
-    public bool OnAttack = false;
-    public bool OnDefense = false;
-    public bool OnRecover = false;
-    public bool OnBarrier = false;
-    public bool OnToBoss = false;  
-    public bool OnToEnemy = false;
+    // 스킬
+    public float BulletSpeed = 10.0f;
+    public float BulletDamage = 1;
+
+    public int EnemyDamage = 2;
+    public int BossDamage = 5;
 }
+
+
+/*
+    ControllerManager.GetInstance().
+*/

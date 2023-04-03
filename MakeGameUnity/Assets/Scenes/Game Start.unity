@@ -5368,6 +5368,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 1631803367720799994, guid: 60c7dc810f5e44d44ad58cc99dbfa55d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5817677595284489692, guid: 60c7dc810f5e44d44ad58cc99dbfa55d, type: 3}
       propertyPath: m_Size.x
       value: 0.5797925
@@ -5397,6 +5401,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 434355226602484051, guid: 30c97d578a4393743bc860b518b559eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 684249779559776832, guid: 30c97d578a4393743bc860b518b559eb, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -5444,6 +5452,14 @@ PrefabInstance:
     - target: {fileID: 1361087857076498876, guid: 30c97d578a4393743bc860b518b559eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440430957544479223, guid: 30c97d578a4393743bc860b518b559eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.482
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851421993308693473, guid: 30c97d578a4393743bc860b518b559eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4452113213898189412, guid: 30c97d578a4393743bc860b518b559eb, type: 3}
       propertyPath: m_Sprite
@@ -5554,6 +5570,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8c8b415ef1e97c641990231cd58dc8ba, type: 3}
+    - target: {fileID: 7165795669516231561, guid: 630beb0e1ff049f448774e5b2b75695a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165795669516231561, guid: 630beb0e1ff049f448774e5b2b75695a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165795669516231561, guid: 630beb0e1ff049f448774e5b2b75695a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7165795669897947762, guid: 630beb0e1ff049f448774e5b2b75695a, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0

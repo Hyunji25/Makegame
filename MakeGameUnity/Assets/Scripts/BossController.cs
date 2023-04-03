@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
@@ -20,7 +21,7 @@ public class BossController : MonoBehaviour
 
     private float CoolDown;
     private float Speed;
-    public int HP;
+    public float HP;
 
     private bool SkillAttack;
     private bool Attack;
@@ -72,12 +73,17 @@ public class BossController : MonoBehaviour
         if (ControllerManager.GetInstance().DirRight)
             transform.position -= new Vector3(1.0f, 0.0f, 0.0f) * Time.deltaTime;
 
+        float Distance = Vector3.Distance(Target.transform.position, transform.position);
 
         if (active)
         {
             active = false;
             choice = onController();
             //StartCoroutine(onCooldown());
+        }
+        else if (Distance < 3.0f)
+        {
+            onAttack();
         }
         else
         {
@@ -102,7 +108,7 @@ public class BossController : MonoBehaviour
     {
         if (collision.tag == "Bullet")
         {
-            --HP;
+            HP -= ControllerManager.GetInstance().BulletDamage;
 
             if (HP <= 0)
             {
@@ -117,6 +123,7 @@ public class BossController : MonoBehaviour
     private int onController()
     {
         // 행동 패턴에 대한 내용을 추가 합니다
+        
 
         {
             // 초기화
@@ -172,7 +179,7 @@ public class BossController : MonoBehaviour
             {
                 if (collider.tag == "Player")
                 {
-                    collider.GetComponent<PlayerController>().TakeDamage(1);
+                    collider.GetComponent<PlayerController>().TakeDamage(ControllerManager.GetInstance().BossDamage);
                 }
             }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class Skill : MonoBehaviour
     private float cooldown;
 
     private int Index;
+
+    private bool OnOff = false;
 
     private void Start()
     {
@@ -27,6 +30,8 @@ public class Skill : MonoBehaviour
             ButtonsImages.Add(Buttons[i].GetComponent<Image>());
 
         cooldown = 0.0f;
+
+        print("1");
     }
 
     public void PushButton()
@@ -34,40 +39,56 @@ public class Skill : MonoBehaviour
         ButtonsImages[Index].fillAmount = 0;
         Buttons[Index].GetComponent<Button>().enabled = false;
 
-        StartCoroutine(Testcase1_Coroutine());
+        switch(Index)
+        {
+            case 0 :
+                StartCoroutine(Testcase1_Coroutine());
+                break;
+        }
     }
 
     IEnumerator Testcase1_Coroutine()
     {
         float cool = cooldown;
         int i = Index;
-
-        while (ButtonsImages[i].fillAmount != 1)
+        if (OnOff)
         {
-            ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
-            yield return null;
+            while (ButtonsImages[i].fillAmount != 1)
+            {
+                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
+                yield return null;
+            }
+
+            Buttons[i].GetComponent<Button>().enabled = true;
+            ControllerManager.GetInstance().BulletSpeed -= 0.5f;
+            ControllerManager.GetInstance().BulletDamage -= 2;
+            OnOff = false;
+
+            print("3");
+            print(ControllerManager.GetInstance().BulletSpeed + " / " + ControllerManager.GetInstance().BulletDamage);
         }
-
-        Buttons[i].GetComponent<Button>().enabled = true;
-
     }
 
+    // cooldown이 클수록 쿨타임이 줄어듦
     public void Testcase()
     {
         Index = 0;
 
         cooldown = 0.5f;
 
-        ControllerManager.GetInstance().BulletSpeed += 0.025f;
-        ControllerManager.GetInstance().BulletDamage++;
+        ControllerManager.GetInstance().BulletSpeed += 0.5f;
+        ControllerManager.GetInstance().BulletDamage += 2;
+        OnOff = true;
 
+        print("2");
+        print(ControllerManager.GetInstance().BulletSpeed + " / " + ControllerManager.GetInstance().BulletDamage);
     }
 
     public void Testcase1()
     {
         Index = 1;
 
-        cooldown = 0.5f;
+        cooldown = 0.25f;
 
 
     }
@@ -96,7 +117,7 @@ public class Skill : MonoBehaviour
 
         cooldown = 0.5f;
 
-        ControllerManager.GetInstance().Player_HP += 1;
+        
     }
 
     public void Testcase5()

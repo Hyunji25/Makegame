@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     public GameObject Target;
 
     public float Speed;
-    public int HP;
+    public float HP;
     private Animator Anim;
     private Vector3 Movement;
 
@@ -66,7 +66,7 @@ public class EnemyController : MonoBehaviour
                 {
                     if (collider.tag == "Player")
                     {
-                        collider.GetComponent<PlayerController>().TakeDamage(1);
+                        collider.GetComponent<PlayerController>().TakeDamage(ControllerManager.GetInstance().EnemyDamage);
                     }
                 }
 
@@ -111,7 +111,7 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.tag == "Bullet")
         {
-            --HP;
+            HP -= ControllerManager.GetInstance().BulletDamage;
 
             if (HP <= 0)
             {
@@ -142,7 +142,6 @@ public class EnemyController : MonoBehaviour
     {
         Destroy(gameObject, 0.016f);
     }
-
 
     private void OnDrawGizmos()
     {

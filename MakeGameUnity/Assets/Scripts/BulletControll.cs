@@ -9,9 +9,6 @@ public class BulletControll : MonoBehaviour
     public GameObject Target = null;
 
     public bool Option;
-    public float Angle;
-
-    // 코드 다른 거 있나 확인
 
     // 총알이 충돌한 횟수
     //private int hp;
@@ -47,7 +44,7 @@ public class BulletControll : MonoBehaviour
         // 실시간으로 타겟의 위치를 확인하고 방향을 갱신한다
         if (Option && Target)
         {
-            Direction = (Target.transform.position - transform.position);
+            Direction = (Target.transform.position - transform.position).normalized;
 
             float fAngle = getAngle(Vector3.down, Target.transform.position);
 
@@ -69,8 +66,6 @@ public class BulletControll : MonoBehaviour
 
         // 이펙트 효과의 위치를 지정
         Obj.transform.position = transform.position;
-
-
 
         // collision = 충돌한 대상
         // 충돌한 대상을 삭제한다
