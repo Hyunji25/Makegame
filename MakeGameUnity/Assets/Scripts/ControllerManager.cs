@@ -21,4 +21,14 @@ public class ControllerManager
     public int Player_HP = 100;
     public int EXP = 0;
     public float BulletDamage = 1;
+
+    public int SkillPoint = 0; // 스킬 포인트
+
+    // 스킬 온오프
+    public bool OnAttack = false;
+    public bool OnDefense = false;
+    public bool OnRecover = false;
+    public bool OnBarrier = false;
+    public bool OnToBoss = false;  
+    public bool OnToEnemy = false;
 }

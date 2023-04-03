@@ -115,6 +115,7 @@ public class EnemyController : MonoBehaviour
 
             if (HP <= 0)
             {
+                ControllerManager.GetInstance().EXP += 1;
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
             }

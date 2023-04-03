@@ -98,4 +98,13 @@ public class Skill : MonoBehaviour
 
         ControllerManager.GetInstance().Player_HP += 1;
     }
+
+    public void Testcase5()
+    {
+        Index = 5;
+
+        cooldown = 0.5f;
+
+
+    }
 }

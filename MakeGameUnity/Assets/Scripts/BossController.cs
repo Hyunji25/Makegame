@@ -47,7 +47,7 @@ public class BossController : MonoBehaviour
     void Start()
     {
         CoolDown = 1.5f;
-        Speed = 1.0f;
+        Speed = 0.5f;
         HP = 5;
 
         SkillAttack = false;
@@ -106,6 +106,7 @@ public class BossController : MonoBehaviour
 
             if (HP <= 0)
             {
+                ControllerManager.GetInstance().EXP += 5;
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
                 Destroy(gameObject, 1.0f);
