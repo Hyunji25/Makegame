@@ -7,7 +7,6 @@ public class SidebarController : MonoBehaviour
 {
     public GameObject sidebar;
     private Animator Anim;
-
     public bool check;
 
     private void Awake()
@@ -24,10 +23,5 @@ public class SidebarController : MonoBehaviour
     {
         check = !check;
         Anim.SetBool("Move", check);
-        //print(check);
     }
 }
-
-
-
-// 사이드바 움직이는 애니메이션 부분 다시

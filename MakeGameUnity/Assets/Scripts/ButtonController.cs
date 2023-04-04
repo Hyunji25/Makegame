@@ -20,7 +20,7 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
     void Start()
     {
-        text.text = transform.name;
+
     }
 
     public void OnDrag(PointerEventData eventData)

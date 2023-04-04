@@ -61,12 +61,6 @@ public class Skill : MonoBehaviour
             case 3:
                 StartCoroutine(Testcase3_Coroutine());
                 break;
-            case 4:
-                StartCoroutine(Testcase4_Coroutine());
-                break;
-            case 5:
-                StartCoroutine(Testcase5_Coroutine());
-                break;
         }
     }
 
@@ -94,7 +88,7 @@ public class Skill : MonoBehaviour
     {
         Index = 0;
 
-        cooldown = 0.5f;
+        cooldown = 0.05f;
 
         ControllerManager.GetInstance().BulletSpeed += 0.5f;
         ControllerManager.GetInstance().BulletDamage += 2;
@@ -185,61 +179,6 @@ public class Skill : MonoBehaviour
 
         ControllerManager.GetInstance().EnemyDamage = 0;
         ControllerManager.GetInstance().BossDamage = 0;
-        OnOff = true;
-    }
-
-    IEnumerator Testcase4_Coroutine()
-    {
-        float cool = cooldown;
-        int i = Index;
-        if (OnOff)
-        {
-            while (ButtonsImages[i].fillAmount != 1)
-            {
-                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
-                yield return null;
-            }
-
-            Buttons[i].GetComponent<Button>().enabled = true;
-            OnOff = false;
-        }
-    }
-
-    public void Testcase4() // º¸½º Å¸±ê À¯µµÅº
-    {
-        Index = 4;
-
-        cooldown = 0.5f;
-
-        GameObject Obj = Instantiate(skill);
-        Obj.transform.position = GameObject.Find("Player").transform.position + new Vector3(0.0f, 3.0f, 0.0f);
-        OnOff = true;
-    }
-
-    IEnumerator Testcase5_Coroutine()
-    {
-        float cool = cooldown;
-        int i = Index;
-        if (OnOff)
-        {
-            while (ButtonsImages[i].fillAmount != 1)
-            {
-                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
-                yield return null;
-            }
-
-            Buttons[i].GetComponent<Button>().enabled = true;
-            OnOff = false;
-        }
-    }
-
-    public void Testcase5() // Àû ¹æÇâ ±¤¿ª±â
-    {
-        Index = 5;
-
-        cooldown = 0.5f;
-
-        
         OnOff = true;
     }
 }

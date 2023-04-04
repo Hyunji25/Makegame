@@ -29,7 +29,7 @@ public class ControllerManager
     public int EnemyDamage = 3;
     public int BossDamage = 5;
 
-    public int Player_HP = 100;
+    public int Player_HP = 10;
 
     public int ToBossDamage = 10;
 }

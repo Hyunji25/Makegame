@@ -44,8 +44,6 @@ public class PlayerController : MonoBehaviour
     // ** 플레이어가 마지막으로 바라본 방향.
     private float Direction;
 
-    private float CoolDown;
-
     [Header("방향")]
     // ** 플레이어가 바라보는 방향
 
@@ -55,7 +53,7 @@ public class PlayerController : MonoBehaviour
     public bool DirRight;
 
     private Animator Anim;
-    public int HP;
+    //public int HP;
 
     private void Awake()
     {
@@ -70,6 +68,7 @@ public class PlayerController : MonoBehaviour
         fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
 
         Anim = GetComponent<Animator>();
+        //HP = ControllerManager.GetInstance().Player_HP;
     }
 
     // ** 유니티 기본 제공 함수
@@ -88,19 +87,15 @@ public class PlayerController : MonoBehaviour
         DirLeft = false;
         DirRight = false;
 
-        CoolDown = 1.0f;
-
         for (int i = 0; i < 6; ++i)
             stageBack[i] = GameObject.Find(i.ToString());
-
-        HP = 100;
     }
 
     // ** 유니티 기본 제공 함수
     // ** 프레임마다 반복적으로 실행되는 함수.
     void Update()
     {
-        if (HP <= 0)
+        if (ControllerManager.GetInstance().Player_HP <= 0)
         {
             OnDeath();
         }
@@ -162,11 +157,6 @@ public class PlayerController : MonoBehaviour
             playerRenderer.flipX = false;
             DirRight = true;
         }
-        if (onAttack)
-        {
-            onAttack = false;
-            StartCoroutine(OnAttack());
-        }
 
         /*
         // ** 좌측 쉬프트키를 입력한다면.....
@@ -174,60 +164,42 @@ public class PlayerController : MonoBehaviour
             // ** 피격
             OnHit();
         */
-    }
 
-    IEnumerator OnAttack()
-    {
-        // ** 공격모션을 실행 시킨다.
-        animator.SetTrigger("Attack");
-
-        // ** 총알원본을 본제한다.
-        GameObject Obj = Instantiate(BulletPrefab);
-
-        // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
-        Obj.transform.position = transform.position;
-
-        // ** 총알의 BullerController 스크립트를 받아온다.
-        BulletController Controller = Obj.AddComponent<BulletController>();
-
-        // ** 총알 스크립트내부의 방향 변수를 현재 플레이어의 방향 변수로 설정 한다.
-        Controller.Direction = new Vector3(Direction, 0.0f, 0.0f);
-
-        // ** 총알 스크립트내부의 FX Prefab을 설정한다.
-        Controller.fxPrefab = fxPrefab;
-
-        // ** 총알의 SpriteRenderer를 받아온다.
-        SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
-
-        // ** 총알의 이미지 반전 상태를 플레이어의 이미지 반전 상태로 설정한다.
-        buleltRenderer.flipY = playerRenderer.flipX;
-
-        // ** 모든 설정이 종료되었다면 저장소에 보관한다.
-        Bullets.Add(Obj);
-
-        while (CoolDown > 0.0f)
+        // ** 스페이스바를 입력한다면..
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            CoolDown -= Time.deltaTime;
-            yield return null;
+            // ** 공격
+            OnAttack();
+            // ** 총알원본을 본제한다.
+            GameObject Obj = Instantiate(BulletPrefab);
+            // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
+            Obj.transform.position = new Vector3(transform.position.x + 1.0f, transform.position.y + 0.75f, transform.position.z);
+            // ** 총알의 BullerController 스크립트를 받아온다.
+            BulletController Controller = Obj.AddComponent<BulletController>();
+            // ** 총알 스크립트내부의 방향 변수를 현재 플레이어의 방향 변수로 설정 한다.
+            Controller.Direction = new Vector3(Direction, 0.0f, 0.0f);
+            // ** 총알 스크립트내부의 FX Prefab을 설정한다.
+            Controller.fxPrefab = fxPrefab;
+            // ** 총알의 SpriteRenderer를 받아온다.
+            SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
+            buleltRenderer.transform.rotation = Quaternion.Euler(0, 180, 0);
+            // ** 총알의 이미지 반전 상태를 플레이어의 이미지 반전 상태로 설정한다.
+            //buleltRenderer.flipY = playerRenderer.flipX;
+            buleltRenderer.flipX = playerRenderer.flipX;
+            // ** 모든 설정이 종료되었다면 저장소에 보관한다.
+            Bullets.Add(Obj);
         }
 
-        CoolDown = 1.0f;
-        onAttack = true;
+        // ** 플레이의 움직임에 따라 이동 모션을 실행 z한다.
+        animator.SetFloat("Speed", Hor);
     }
 
-    private void SetAttack()
-        {
-            // ** 함수가 실행되면 공격모션이 비활성화 된다.
-            // ** 함수는 애니매이션 클립의 이벤트 프레임으로 삽입됨.
-            onAttack = false;
-        }
-
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // 충돌한 대상을 삭제한다
         if (collision.transform.tag == "Enemy")
         {
-            --HP;
+            ControllerManager.GetInstance().Player_HP -= 1;
             OnHit();
         }
         else
@@ -243,6 +215,26 @@ public class PlayerController : MonoBehaviour
     private void ReleaseEnemy()
     {
         Destroy(gameObject, 0.016f);
+    }
+
+    private void OnAttack()
+    {
+        // ** 이미 공격모션이 진행중이라면
+        if (onAttack)
+            // ** 함수를 종료시킨다.
+            return;
+        // ** 함수가 종료되지 않았다면...
+        // ** 공격상태를 활성화 하고.
+        onAttack = true;
+        // ** 공격모션을 실행 시킨다.
+        animator.SetTrigger("Attack");
+    }
+
+    private void SetAttack()
+    {
+        // ** 함수가 실행되면 공격모션이 비활성화 된다.
+        // ** 함수는 애니매이션 클립의 이벤트 프레임으로 삽입됨.
+        onAttack = false;
     }
 
     private void OnHit()
@@ -291,9 +283,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        HP -= damage;
+        ControllerManager.GetInstance().Player_HP -= damage;
         OnHit();
     }
 }
-
-// !! 총알 계속 발사되도록 설정 !!

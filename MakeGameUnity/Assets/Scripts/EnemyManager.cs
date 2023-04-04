@@ -8,6 +8,9 @@ public class EnemyManager : MonoBehaviour
     private EnemyManager() { }
     private static EnemyManager instance = null;
 
+    private int count = 0;
+    private float time = 5.0f;
+
     public static EnemyManager GetInstance
     {
         get
@@ -56,16 +59,6 @@ public class EnemyManager : MonoBehaviour
             // Enemy 원형 객체를 복제한다
             GameObject Obj = Instantiate(Prefab);
 
-            // Enemy HP UI 복제
-            //GameObject Bar = Instantiate(HPPrefab);
-
-            //if (GameObject.Find("EnemyHPCanvas") != null)
-            // 복제된 UI를 캔버스에 위치시킨다
-            //    Bar.transform.SetParent(GameObject.Find("EnemyHPCanvas").transform);
-
-            // Enemy 작동 스크립트 포함
-            //Obj.AddComponent<EnemyController>();
-
             // 클론의 위치를 초기화
             Obj.transform.position = new Vector3(18.0f, Random.Range(-5.6f, -2.7f), 0.0f);
             //Obj.transform.position = new Vector3(18.0f, -7.5f, 0.0f);
@@ -76,14 +69,16 @@ public class EnemyManager : MonoBehaviour
             // 클론의 계층구조 설정
             Obj.transform.SetParent(Parent.transform);
 
-            // UI 객체가 들고 있는 스크립트에 접근
-            //EnemyHPBar enemyHPBar = Bar.GetComponent<EnemyHPBar>();
-
-            // 스크립트의 Target을 지금 생성된 Enemy로 셋팅
-            //enemyHPBar.Target = Obj;
+            count += 1;
+            print(count);
+            if ((count % 10 == 0) && (count != 0))
+            {
+                time -= 0.2f;
+                print(time);
+            }
 
             // 1.5초 휴식
-            yield return new WaitForSeconds(5.0f);
+            yield return new WaitForSeconds(time);
         }
     }
 

@@ -22,7 +22,7 @@ public class BulletController : MonoBehaviour
         Speed = ControllerManager.GetInstance().BulletSpeed;
 
         // 충돌 횟수를 3으로 지정한다
-        hp = 3;
+        hp = 1;
     }
 
     void Update()

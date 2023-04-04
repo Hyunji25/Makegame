@@ -48,7 +48,7 @@ public class BossController : MonoBehaviour
     void Start()
     {
         CoolDown = 1.5f;
-        Speed = 0.5f;
+        Speed = 1.0f;
         HP = 1000;
 
         SkillAttack = false;
