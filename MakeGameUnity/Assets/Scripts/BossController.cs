@@ -49,7 +49,7 @@ public class BossController : MonoBehaviour
     {
         CoolDown = 1.5f;
         Speed = 0.5f;
-        HP = 5;
+        HP = 1000;
 
         SkillAttack = false;
         Attack = false;
@@ -101,14 +101,6 @@ public class BossController : MonoBehaviour
                     onSkill();
                     break;
             }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Bullet")
-        {
-            HP -= ControllerManager.GetInstance().BulletDamage;
 
             if (HP <= 0)
             {
@@ -116,6 +108,31 @@ public class BossController : MonoBehaviour
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
                 Destroy(gameObject, 1.0f);
+            }
+        }
+
+        //if (ControllerManager.GetInstance().Connect)
+        //{
+        //    HP -= ControllerManager.GetInstance().BulletDamage * 5;
+        //    ControllerManager.GetInstance().Connect = false;
+        //}
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            HP -= ControllerManager.GetInstance().BulletDamage;
+        }
+
+        if (collision.tag == "Skill")
+        {
+            HP -= ControllerManager.GetInstance().ToBossDamage;
+            if (collision.gameObject.tag.Equals("Skill"))
+            //부딪힌 객체의 태그를 비교해서 적인지 판단합니다.
+            {
+                //적을 파괴합니다.
+                Destroy(collision.gameObject);
             }
         }
     }

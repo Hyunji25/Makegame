@@ -8,10 +8,10 @@ public class MyGizmo : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        // Gizmos의 색을 변경한다
+        // ** Gizmos의 색을 변경한다.
         Gizmos.color = color;
 
-        // Gizmos를 그린다
+        // ** Gizmos 그린다
         Gizmos.DrawSphere(this.transform.position, 0.2f);
     }
 }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static BulletPattern;
+using static UnityEngine.GraphicsBuffer;
 
 public class BulletPattern : MonoBehaviour
 {
@@ -9,10 +11,9 @@ public class BulletPattern : MonoBehaviour
     {
         Screw,
         DelayScrew,
-        Twist, 
-        D,
+        Twist, D,
         Explosion, 
-        F,
+        Nothing,
         GuideBullet
     };
 
@@ -26,7 +27,11 @@ public class BulletPattern : MonoBehaviour
     void Start()
     {
         BulletPrefab = Resources.Load("Prefabs/PatternBullet") as GameObject;
+        Choice(pattern);
+    }
 
+    private void Choice(Pattern pattern)
+    {
         switch (pattern)
         {
             case Pattern.Screw:
@@ -35,6 +40,7 @@ public class BulletPattern : MonoBehaviour
 
             case Pattern.DelayScrew:
                 StartCoroutine(GetDelayScrewPattern());
+
                 break;
 
             case Pattern.Twist:
@@ -49,7 +55,7 @@ public class BulletPattern : MonoBehaviour
                 StartCoroutine(ExplosionPattern(5.0f, (int)(360 / 5.0f)));
                 break;
 
-            case Pattern.F:
+            case Pattern.Nothing:
 
                 break;
 
@@ -80,7 +86,6 @@ public class BulletPattern : MonoBehaviour
             BulletList.Add(Obj);
         }
     }
-
 
     private IEnumerator GetDelayScrewPattern()
     {
@@ -121,7 +126,7 @@ public class BulletPattern : MonoBehaviour
             fTime -= Time.deltaTime;
 
             GameObject obj = Instantiate(Resources.Load("Prefabs/Twist")) as GameObject;
-            
+
             yield return null;
         }
     }
@@ -173,9 +178,14 @@ public class BulletPattern : MonoBehaviour
         GameObject Obj = Instantiate(BulletPrefab);
         BulletControll controller = Obj.GetComponent<BulletControll>();
 
-        controller.Target = GameObject.Find("Target");
+        controller.Target = GameObject.Find("Boss");
         controller.Option = true;
 
         Obj.transform.position = transform.position;
     }
 }
+
+
+/*
+ 
+ */

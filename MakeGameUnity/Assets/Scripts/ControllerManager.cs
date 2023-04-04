@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static BulletPattern;
 
 public class ControllerManager
 {
@@ -17,7 +18,6 @@ public class ControllerManager
     public bool DirRight;
 
     public float PlayerSpeed = 5.0f;
-    public int Player_HP = 100;
     public int EXP = 0;
     
     public int SkillPoint = 0; // 스킬 포인트
@@ -26,8 +26,12 @@ public class ControllerManager
     public float BulletSpeed = 10.0f;
     public float BulletDamage = 1;
 
-    public int EnemyDamage = 2;
+    public int EnemyDamage = 3;
     public int BossDamage = 5;
+
+    public int Player_HP = 100;
+
+    public int ToBossDamage = 10;
 }
 
 

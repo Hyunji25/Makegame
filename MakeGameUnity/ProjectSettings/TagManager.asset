@@ -11,6 +11,7 @@ TagManager:
   - MonsterAttack
   - Enemy
   - Boss
+  - Skill
   layers:
   - Default
   - TransparentFX

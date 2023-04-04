@@ -16,6 +16,16 @@ public class Skill : MonoBehaviour
 
     private bool OnOff = false;
 
+    private BulletPattern bulletPattern;
+
+    private GameObject skill;
+
+    private void Awake()
+    {
+        skill = Resources.Load("Prefabs/PatternBullet") as GameObject;
+    }
+
+
     private void Start()
     {
         GameObject SkillsObj = GameObject.Find("Skills");
@@ -30,8 +40,6 @@ public class Skill : MonoBehaviour
             ButtonsImages.Add(Buttons[i].GetComponent<Image>());
 
         cooldown = 0.0f;
-
-        print("1");
     }
 
     public void PushButton()
@@ -42,12 +50,27 @@ public class Skill : MonoBehaviour
         switch(Index)
         {
             case 0 :
+                StartCoroutine(Testcase_Coroutine());
+                break;
+            case 1:
                 StartCoroutine(Testcase1_Coroutine());
+                break;
+            case 2:
+                StartCoroutine(Testcase2_Coroutine());
+                break;
+            case 3:
+                StartCoroutine(Testcase3_Coroutine());
+                break;
+            case 4:
+                StartCoroutine(Testcase4_Coroutine());
+                break;
+            case 5:
+                StartCoroutine(Testcase5_Coroutine());
                 break;
         }
     }
 
-    IEnumerator Testcase1_Coroutine()
+    IEnumerator Testcase_Coroutine()
     {
         float cool = cooldown;
         int i = Index;
@@ -63,14 +86,11 @@ public class Skill : MonoBehaviour
             ControllerManager.GetInstance().BulletSpeed -= 0.5f;
             ControllerManager.GetInstance().BulletDamage -= 2;
             OnOff = false;
-
-            print("3");
-            print(ControllerManager.GetInstance().BulletSpeed + " / " + ControllerManager.GetInstance().BulletDamage);
         }
     }
 
     // cooldown이 클수록 쿨타임이 줄어듦
-    public void Testcase()
+    public void Testcase() // 플레이어 공격력 상승
     {
         Index = 0;
 
@@ -79,53 +99,147 @@ public class Skill : MonoBehaviour
         ControllerManager.GetInstance().BulletSpeed += 0.5f;
         ControllerManager.GetInstance().BulletDamage += 2;
         OnOff = true;
-
-        print("2");
-        print(ControllerManager.GetInstance().BulletSpeed + " / " + ControllerManager.GetInstance().BulletDamage);
     }
 
-    public void Testcase1()
+    IEnumerator Testcase1_Coroutine()
+    {
+        float cool = cooldown;
+        int i = Index;
+        if (OnOff)
+        {
+            while (ButtonsImages[i].fillAmount != 1)
+            {
+                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
+                yield return null;
+            }
+
+            Buttons[i].GetComponent<Button>().enabled = true;
+            ControllerManager.GetInstance().EnemyDamage += 2;
+            ControllerManager.GetInstance().BossDamage += 2;
+            OnOff = false;
+        }
+    }
+
+    public void Testcase1() // 적과 보스 공격력 감소
     {
         Index = 1;
 
         cooldown = 0.25f;
 
-
+        ControllerManager.GetInstance().EnemyDamage -= 2;
+        ControllerManager.GetInstance().BossDamage -= 2;
+        OnOff = true;
     }
 
-    public void Testcase2()
+    IEnumerator Testcase2_Coroutine()
+    {
+        float cool = cooldown;
+        int i = Index;
+        if (OnOff)
+        {
+            while (ButtonsImages[i].fillAmount != 1)
+            {
+                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
+                yield return null;
+            }
+
+            Buttons[i].GetComponent<Button>().enabled = true;
+            OnOff = false;
+        }
+    }
+
+    public void Testcase2() // 플레이어 체력 회복
     {
         Index = 2;
 
         cooldown = 0.5f;
 
-
+        ControllerManager.GetInstance().Player_HP += 30;
+        OnOff = true;
     }
 
-    public void Testcase3()
+    IEnumerator Testcase3_Coroutine()
+    {
+        float cool = cooldown;
+        int i = Index;
+        if (OnOff)
+        {
+            while (ButtonsImages[i].fillAmount != 1)
+            {
+                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
+                yield return null;
+            }
+
+            Buttons[i].GetComponent<Button>().enabled = true;
+            ControllerManager.GetInstance().EnemyDamage = 3;
+            ControllerManager.GetInstance().BossDamage = 5;
+            OnOff = false;
+        }
+    }
+
+    public void Testcase3() // 무적, 적과 보스 공격력 0
     {
         Index = 3;
 
         cooldown = 0.5f;
 
-
+        ControllerManager.GetInstance().EnemyDamage = 0;
+        ControllerManager.GetInstance().BossDamage = 0;
+        OnOff = true;
     }
 
-    public void Testcase4()
+    IEnumerator Testcase4_Coroutine()
+    {
+        float cool = cooldown;
+        int i = Index;
+        if (OnOff)
+        {
+            while (ButtonsImages[i].fillAmount != 1)
+            {
+                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
+                yield return null;
+            }
+
+            Buttons[i].GetComponent<Button>().enabled = true;
+            OnOff = false;
+        }
+    }
+
+    public void Testcase4() // 보스 타깃 유도탄
     {
         Index = 4;
 
         cooldown = 0.5f;
 
-        
+        GameObject Obj = Instantiate(skill);
+        Obj.transform.position = GameObject.Find("Player").transform.position + new Vector3(0.0f, 3.0f, 0.0f);
+        OnOff = true;
     }
 
-    public void Testcase5()
+    IEnumerator Testcase5_Coroutine()
+    {
+        float cool = cooldown;
+        int i = Index;
+        if (OnOff)
+        {
+            while (ButtonsImages[i].fillAmount != 1)
+            {
+                ButtonsImages[i].fillAmount += Time.deltaTime * cooldown;
+                yield return null;
+            }
+
+            Buttons[i].GetComponent<Button>().enabled = true;
+            OnOff = false;
+        }
+    }
+
+    public void Testcase5() // 적 방향 광역기
     {
         Index = 5;
 
         cooldown = 0.5f;
 
-
+        
+        OnOff = true;
     }
 }
