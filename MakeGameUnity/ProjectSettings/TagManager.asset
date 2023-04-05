@@ -19,9 +19,9 @@ TagManager:
   - Player
   - Water
   - UI
-  - MonsterAttack
+  - EnemyBullet
   - Bullet
-  - 
+  - Monster
   - 
   - 
   - 
