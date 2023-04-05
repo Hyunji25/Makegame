@@ -110,6 +110,7 @@ public class Skill : MonoBehaviour
             Buttons[i].GetComponent<Button>().enabled = true;
             ControllerManager.GetInstance().EnemyDamage += 2;
             ControllerManager.GetInstance().BossDamage += 2;
+            ControllerManager.GetInstance().BossThrow += 1;
             OnOff = false;
         }
     }
@@ -122,6 +123,7 @@ public class Skill : MonoBehaviour
 
         ControllerManager.GetInstance().EnemyDamage -= 2;
         ControllerManager.GetInstance().BossDamage -= 2;
+        ControllerManager.GetInstance().BossThrow -= 1;
         OnOff = true;
     }
 
@@ -167,6 +169,7 @@ public class Skill : MonoBehaviour
             Buttons[i].GetComponent<Button>().enabled = true;
             ControllerManager.GetInstance().EnemyDamage = 3;
             ControllerManager.GetInstance().BossDamage = 5;
+            ControllerManager.GetInstance().BossThrow = 2;
             OnOff = false;
         }
     }
@@ -179,6 +182,7 @@ public class Skill : MonoBehaviour
 
         ControllerManager.GetInstance().EnemyDamage = 0;
         ControllerManager.GetInstance().BossDamage = 0;
+        ControllerManager.GetInstance().BossThrow = 0;
         OnOff = true;
     }
 }

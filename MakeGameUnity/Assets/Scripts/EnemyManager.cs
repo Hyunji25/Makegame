@@ -70,11 +70,9 @@ public class EnemyManager : MonoBehaviour
             Obj.transform.SetParent(Parent.transform);
 
             count += 1;
-            print(count);
             if ((count % 10 == 0) && (count != 0))
             {
                 time -= 0.2f;
-                print(time);
             }
 
             // 1.5ÃÊ ÈÞ½Ä

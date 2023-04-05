@@ -5,52 +5,45 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EnemyBulletController : MonoBehaviour
 {
-    //private float Speed;
-    private Animator Anim;
-    public GameObject Player;
-    private Animator animator;
-    private bool onSkill;
+    // 총알이 날아가는 속도
+    private float Speed;
 
-    private void Awake()
+    // 이펙트 효과 원본
+    public GameObject fxPrefab;
+
+    // 총알이 날아가야 할 방향
+    public Vector3 Direction { get; set; }
+
+    private void Start()
     {
-        Anim = GetComponent<Animator>();
-        animator = this.GetComponent<Animator>();
-        Player = GameObject.Find("Player");
+        // 속도 초기값
+        Speed = ControllerManager.GetInstance().BulletSpeed;
     }
 
-    void Start()
-    {
-        //Speed = 10.0f;
-    }
-    
     void Update()
     {
-        transform.position = new Vector3(
-            Player.transform.position.x,
-            Player.transform.position.y + 4.0f,
-            Player.transform.position.z);
-        OnSkill();
-        Destroy(this.gameObject, 1.0f);
+        // 방향으로 속도만큼 위치를 변경
+        transform.position += Direction * Speed * Time.deltaTime;
     }
 
-    private void OnSkill()
-    {
-        if (onSkill)
-            return;
-
-        onSkill = true;
-
-        Anim.SetTrigger("EnemyBullet");
-    }
-
-    private void SetSkill()
-    {
-        onSkill = false;
-    }
-
+    // 충돌체와 물리엔진이 포함된 오브젝트가 다른 충돌체와 충돌한다면 실행되는 함수
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Player")
-            Destroy(this.gameObject, 0.016f);
+        // 이펙트 효과 복제
+        GameObject Obj = Instantiate(fxPrefab);
+
+        // 이펙트 효과의 위치를 지정
+        Obj.transform.position = transform.position;
+        // collision = 충돌한 대상
+        // 충돌한 대상을 삭제한다
+        
+        if (collision.transform.tag == "wall")
+            Destroy(this.gameObject);
+        else if (collision.transform.tag == "Player")
+        {
+            print("터치");
+            collision.GetComponent<PlayerController>().TakeDamage(ControllerManager.GetInstance().BossThrow);
+            print(ControllerManager.GetInstance().Player_HP);
+        }
     }
 }

@@ -20,7 +20,7 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
     void Start()
     {
-
+        
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -31,13 +31,32 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     public void OnPointerUp(PointerEventData eventData)
     {
         text.color = OldColor;
-
-        SceneManager.LoadScene(text.text);
+        switch (text.text)
+        {
+            case "Game Start":
+                SceneManager.LoadScene(text.text);
+                break;
+            case "Tutorial":
+                SceneManager.LoadScene(text.text);
+                break;
+            case "End Game":
+                GameQuit();
+                break;
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         OldColor = text.color;
         text.color = Color.white;
+    }
+
+    public void GameQuit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit(); // 어플리케이션 종료
+#endif
     }
 }

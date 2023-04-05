@@ -7,7 +7,6 @@ public class BossController : MonoBehaviour
 {
     const int STATE_WALK = 1;
     const int STATE_ATTACK = 2;
-    const int STATE_SKILL = 3;
 
     private GameObject Target;
 
@@ -23,7 +22,6 @@ public class BossController : MonoBehaviour
     private float Speed;
     public float HP;
 
-    private bool SkillAttack;
     private bool Attack;
     private bool Walk;
     private bool active;
@@ -36,6 +34,17 @@ public class BossController : MonoBehaviour
     public Transform pos;
     public Vector2 boxSize;
 
+    private bool onThrow;
+
+    // ** 복제할 총알 원본
+    private GameObject EBulletPrefab;
+
+    // ** 복제할 FX 원본
+    private GameObject EfxPrefab;
+
+    // ** 복제된 총알의 저장공간.
+    private List<GameObject> EnemyBullets = new List<GameObject>();
+
     private void Awake()
     {
         Target = GameObject.Find("Player");
@@ -43,26 +52,36 @@ public class BossController : MonoBehaviour
         Anim = GetComponent<Animator>();
 
         Brenderer = GetComponent<SpriteRenderer>();
+
+        // ** [Resources] 폴더에서 사용할 리소스를 들고온다.
+        EBulletPrefab = Resources.Load("Prefabs/EnemyBullet") as GameObject;
+        EfxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
     }
 
     void Start()
     {
-        CoolDown = 1.5f;
-        Speed = 1.0f;
+        CoolDown = 1.8f;
+        Speed = 1.2f;
         HP = 1000;
-
-        SkillAttack = false;
-        Attack = false;
 
         active = true;
 
-        SkillAttack = false;
         Attack = false;
         Walk = false;
+
+        onThrow = true;
     }
 
     void Update()
     {
+        if (HP <= 0)
+        {
+            ControllerManager.GetInstance().EXP += 5;
+            Anim.SetTrigger("Die");
+            GetComponent<CapsuleCollider2D>().enabled = false;
+            Destroy(gameObject, 1.0f);
+        }
+
         float result = Target.transform.position.x - transform.position.x;
 
         if (result < 0.0f)
@@ -75,13 +94,19 @@ public class BossController : MonoBehaviour
 
         float Distance = Vector3.Distance(Target.transform.position, transform.position);
 
+        if (onThrow)
+        {
+            onThrow = false;
+            StartCoroutine(OnThrow());
+        }
+
         if (active)
         {
             active = false;
             choice = onController();
             //StartCoroutine(onCooldown());
         }
-        else if (Distance < 3.0f)
+        else if (Distance < 1.0f)
         {
             onAttack();
         }
@@ -96,18 +121,6 @@ public class BossController : MonoBehaviour
                 case STATE_ATTACK:
                     onAttack();
                     break;
-
-                case STATE_SKILL:
-                    onSkill();
-                    break;
-            }
-
-            if (HP <= 0)
-            {
-                ControllerManager.GetInstance().EXP += 5;
-                Anim.SetTrigger("Die");
-                GetComponent<CapsuleCollider2D>().enabled = false;
-                Destroy(gameObject, 1.0f);
             }
         }
 
@@ -117,6 +130,40 @@ public class BossController : MonoBehaviour
         //    ControllerManager.GetInstance().Connect = false;
         //}
     }
+
+    IEnumerator OnThrow()
+    {
+        // ** 총알원본을 본제한다.
+        GameObject Obj = Instantiate(EBulletPrefab);
+
+        // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
+        Obj.transform.position = transform.position + new Vector3(1.8f, 1.8f, 0.0f);
+
+        // ** 총알의 BullerController 스크립트를 받아온다.
+        BulletController Controller = Obj.AddComponent<BulletController>();
+
+        // ** 총알 스크립트내부의 방향 변수를 현재 플레이어의 방향 변수로 설정 한다.
+        Controller.Direction = new Vector3(1.0f, 0.0f, 0.0f);
+
+        // ** 총알 스크립트내부의 FX Prefab을 설정한다.
+        Controller.fxPrefab = EfxPrefab;
+
+        // ** 총알의 SpriteRenderer를 받아온다.
+        SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
+
+        // ** 모든 설정이 종료되었다면 저장소에 보관한다.
+        EnemyBullets.Add(Obj);
+
+        while (CoolDown > 0.0f)
+        {
+            CoolDown -= Time.deltaTime;
+            yield return null;
+        }
+
+        CoolDown = 1.8f;
+        onThrow = true;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -151,11 +198,6 @@ public class BossController : MonoBehaviour
                 Walk = false;
             }
 
-            if (SkillAttack)
-            {
-                SkillAttack = false;
-            }
-
             if (Attack)
             {
                 Attack = false;
@@ -171,7 +213,7 @@ public class BossController : MonoBehaviour
         // * 1 : 이동           STATE_WALK
         // * 2 : 공격          STATE_ATTACK
         // * 3 : 스킬   STATE_SKILL
-        return Random.Range(STATE_WALK, STATE_SKILL + 1);
+        return Random.Range(STATE_WALK, STATE_ATTACK + 1);
     }
 
 
@@ -239,21 +281,9 @@ public class BossController : MonoBehaviour
             active = true;
     }
 
-    private void onSkill()
-    {
-        {
-            //print("onSkill");
-        }
-
-        active = true;
-    }
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(pos.position, boxSize);
     }
 }
-
-// 여기 스크립트 전체적으로 다시 학습
-// active 반대로 하라했던 거 같은데 왜 안 걷지

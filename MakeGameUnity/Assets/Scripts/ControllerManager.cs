@@ -28,6 +28,7 @@ public class ControllerManager
 
     public int EnemyDamage = 3;
     public int BossDamage = 5;
+    public int BossThrow = 2;
 
     public int Player_HP = 10;
 

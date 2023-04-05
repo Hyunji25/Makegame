@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-
-
 
 public class PlayerController : MonoBehaviour
 {
@@ -199,8 +196,8 @@ public class PlayerController : MonoBehaviour
         // 충돌한 대상을 삭제한다
         if (collision.transform.tag == "Enemy")
         {
-            ControllerManager.GetInstance().Player_HP -= 1;
             OnHit();
+            ControllerManager.GetInstance().Player_HP -= 1;
         }
         else
         {
@@ -283,7 +280,8 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        ControllerManager.GetInstance().Player_HP -= damage;
         OnHit();
+        ControllerManager.GetInstance().Player_HP -= damage;
+        print(ControllerManager.GetInstance().Player_HP);
     }
 }
